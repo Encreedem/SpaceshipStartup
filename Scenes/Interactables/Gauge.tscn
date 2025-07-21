@@ -1,0 +1,53 @@
+[gd_scene load_steps=7 format=3 uid="uid://bkloicilc1sm4"]
+
+[ext_resource type="Texture2D" uid="uid://dwsap80jpy71q" path="res://Assets/2D/My Assets/BackupGenerator/Gauge Background.png" id="1_8sdof"]
+[ext_resource type="Script" uid="uid://chyh02efafts4" path="res://Scenes/Interactables/Gauge.cs" id="2_8sdof"]
+[ext_resource type="Texture2D" uid="uid://cm571tmd0upag" path="res://Assets/2D/My Assets/BackupGenerator/Gauge Needle.png" id="2_ug0yy"]
+[ext_resource type="Texture2D" uid="uid://bdxnuqnccssxa" path="res://Assets/2D/My Assets/BackupGenerator/Gauge Distribution Danger.png" id="4_okaqk"]
+[ext_resource type="Texture2D" uid="uid://dn2tcinu5e7i8" path="res://Assets/2D/My Assets/BackupGenerator/Gauge Temperature Danger.png" id="5_78yrn"]
+[ext_resource type="Texture2D" uid="uid://cipqmcg23xkpl" path="res://Assets/2D/My Assets/BackupGenerator/Gauge Face.png" id="6_m3upy"]
+
+[node name="Gauge" type="Sprite3D"]
+transform = Transform3D(1, 0, 6.3573e-08, 0, 1, 0, -6.3573e-08, 0, 1, 0, 0, 0)
+sorting_offset = 1.0
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("1_8sdof")
+script = ExtResource("2_8sdof")
+
+[node name="NeedlePivot" type="Node3D" parent="."]
+
+[node name="GaugeNeedle" type="Sprite3D" parent="NeedlePivot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.44, 0.03)
+sorting_offset = 2.0
+alpha_cut = 2
+texture = ExtResource("2_ug0yy")
+
+[node name="Distribution Danger" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.01)
+visible = false
+sorting_offset = 2.0
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("4_okaqk")
+
+[node name="Temperature Danger" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.01)
+visible = false
+sorting_offset = 2.0
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("5_78yrn")
+
+[node name="Face" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.02)
+sorting_offset = 2.0
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("6_m3upy")
+
+[node name="Icon" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.605, 0.03)
+sorting_offset = 2.0
+alpha_cut = 2
+texture_filter = 0

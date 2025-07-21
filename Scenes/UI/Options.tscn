@@ -1,0 +1,140 @@
+[gd_scene load_steps=17 format=3 uid="uid://cuoi1my5pxl1t"]
+
+[ext_resource type="Script" uid="uid://dbupxdqxp2n6t" path="res://Scenes/UI/Options.cs" id="1_l3m5w"]
+[ext_resource type="Texture2D" uid="uid://mt0rriyr7gba" path="res://Assets/UI/Kenney/UI Pack - Sci-fi/metalPanel.png" id="2_is2mg"]
+[ext_resource type="PackedScene" uid="uid://cw6o4khpfh3cv" path="res://Scenes/UI/VolumeSlider.tscn" id="2_l3m5w"]
+[ext_resource type="Texture2D" uid="uid://55jt05e1tqv8" path="res://Assets/UI/Kenney/UI Pack/Blue/Double/slide_hangle.png" id="3_is2mg"]
+[ext_resource type="Texture2D" uid="uid://dr8smknvfgf2u" path="res://Assets/UI/Kenney/UI Pack/Blue/Double/slide_horizontal_grey.png" id="4_yggy8"]
+[ext_resource type="Texture2D" uid="uid://rf6npypfndt0" path="res://Assets/UI/Kenney/UI Pack/Blue/Double/slide_horizontal_color.png" id="5_cprax"]
+[ext_resource type="Texture2D" uid="uid://bcyaaggbjjpsc" path="res://Assets/UI/Kenney/Game Icons/2x/audioOn.png" id="6_iq1oj"]
+[ext_resource type="Texture2D" uid="uid://blctrj557hfty" path="res://Assets/UI/Kenney/UI Pack/Blue/Double/icon_checkmark.png" id="7_xoa0g"]
+[ext_resource type="Texture2D" uid="uid://pofv4hiotyh1" path="res://Assets/UI/Kenney/Game Icons/2x/audioOff.png" id="8_is2mg"]
+[ext_resource type="Texture2D" uid="uid://bm4qd58sb2inr" path="res://Assets/UI/Kenney/UI Pack - Sci-fi/Extra/Double/button_rectangle.png" id="8_kvapx"]
+[ext_resource type="Texture2D" uid="uid://cbll21v0htrg7" path="res://Assets/UI/Kenney/UI Pack - Sci-fi/Extra/Double/button_rectangle_depth.png" id="9_ncakp"]
+[ext_resource type="AudioStream" uid="uid://ljapayb28jf2" path="res://Assets/SFX/Pixabay/light-flick-on-100133.mp3" id="10_jqb45"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hnfpk"]
+texture = ExtResource("4_yggy8")
+texture_margin_left = 32.0
+texture_margin_top = 16.0
+texture_margin_right = 32.0
+texture_margin_bottom = 16.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_b1etx"]
+texture = ExtResource("5_cprax")
+texture_margin_left = 32.0
+texture_margin_top = 16.0
+texture_margin_right = 32.0
+texture_margin_bottom = 16.0
+expand_margin_right = 4.0
+region_rect = Rect2(0, 0, 162.733, 32)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dj2bq"]
+texture = ExtResource("9_ncakp")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_go08r"]
+texture = ExtResource("8_kvapx")
+
+[node name="Options" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_l3m5w")
+
+[node name="Background" type="NinePatchRect" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -262.0
+offset_top = -111.0
+offset_right = 262.0
+offset_bottom = 111.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_is2mg")
+region_rect = Rect2(0, 0, 100, 100)
+patch_margin_left = 11
+patch_margin_top = 11
+patch_margin_right = 11
+patch_margin_bottom = 11
+
+[node name="VolumeSlider" parent="Background" instance=ExtResource("2_l3m5w")]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 105.0
+offset_top = 38.0
+offset_right = -12.0
+offset_bottom = 102.0
+grow_horizontal = 2
+theme_override_icons/grabber = ExtResource("3_is2mg")
+theme_override_icons/grabber_highlight = ExtResource("3_is2mg")
+theme_override_styles/slider = SubResource("StyleBoxTexture_hnfpk")
+theme_override_styles/grabber_area = SubResource("StyleBoxTexture_b1etx")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxTexture_b1etx")
+value = 0.5
+BusName = "Master"
+
+[node name="VolumeIcon" type="TextureRect" parent="Background"]
+modulate = Color(0, 0.517737, 0.814424, 1)
+layout_mode = 0
+offset_left = 8.0
+offset_top = 18.0
+offset_right = 108.0
+offset_bottom = 118.0
+texture = ExtResource("6_iq1oj")
+
+[node name="VolumeMutedIcon" type="TextureRect" parent="Background"]
+visible = false
+modulate = Color(0, 0.517737, 0.814424, 1)
+layout_mode = 0
+offset_left = 8.0
+offset_top = 18.0
+offset_right = 108.0
+offset_bottom = 118.0
+texture = ExtResource("8_is2mg")
+
+[node name="Confirm" type="Button" parent="Background"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -67.0
+offset_top = -92.0
+offset_right = 67.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_icons/icon = ExtResource("7_xoa0g")
+theme_override_styles/focus = SubResource("StyleBoxTexture_dj2bq")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_go08r")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_go08r")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxTexture_dj2bq")
+theme_override_styles/hover = SubResource("StyleBoxTexture_dj2bq")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_go08r")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxTexture_dj2bq")
+theme_override_styles/normal = SubResource("StyleBoxTexture_dj2bq")
+icon_alignment = 1
+
+[node name="InteractSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_jqb45")
+
+[node name="SuppressAudioTimer" type="Timer" parent="."]
+wait_time = 0.5
+one_shot = true
+autostart = true
+
+[connection signal="value_changed" from="Background/VolumeSlider" to="." method="OnVolumeSliderValueChanged"]
+[connection signal="gui_input" from="Background/VolumeIcon" to="." method="OnVolumeIconGuiInput"]
+[connection signal="gui_input" from="Background/VolumeMutedIcon" to="." method="OnVolumeIconGuiInput"]
+[connection signal="pressed" from="Background/Confirm" to="." method="OnConfirmPressed"]
+[connection signal="timeout" from="SuppressAudioTimer" to="." method="OnSuppressAudioTimerTimeout"]

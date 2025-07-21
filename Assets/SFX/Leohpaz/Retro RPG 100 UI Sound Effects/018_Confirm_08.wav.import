@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c5g5u7j8xigpm"
+path="res://.godot/imported/018_Confirm_08.wav-24233c26361cc7df6c9a03ce37ff866c.sample"
+
+[deps]
+
+source_file="res://Assets/SFX/Leohpaz/Retro RPG 100 UI Sound Effects/018_Confirm_08.wav"
+dest_files=["res://.godot/imported/018_Confirm_08.wav-24233c26361cc7df6c9a03ce37ff866c.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

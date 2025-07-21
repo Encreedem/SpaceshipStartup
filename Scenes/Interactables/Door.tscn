@@ -1,0 +1,226 @@
+[gd_scene load_steps=14 format=3 uid="uid://5kq2qrokh1c0"]
+
+[ext_resource type="ArrayMesh" uid="uid://buxom7qnte8uu" path="res://Assets/3D/ThisIsBranden/Spaceship_Modules/Door_Small_Bottom.res" id="1_k51fq"]
+[ext_resource type="Script" uid="uid://divcdkgqlw8sf" path="res://Scenes/Interactables/Door.cs" id="1_vf6nv"]
+[ext_resource type="ArrayMesh" uid="uid://35d7yq23uvqv" path="res://Assets/3D/ThisIsBranden/Spaceship_Modules/Door_Small_Top.res" id="2_n1bpq"]
+[ext_resource type="AudioStream" uid="uid://cdq020lj6jitp" path="res://Assets/SFX/Pixabay/sci-fi-sliding-door-burst-27425.mp3" id="3_n1bpq"]
+[ext_resource type="PackedScene" uid="uid://yluwo8g0gjx3" path="res://Scenes/Interactables/Interactable3D.tscn" id="5_vtf4t"]
+[ext_resource type="AudioStream" uid="uid://bgg3wk0dxb50e" path="res://Assets/SFX/Leohpaz/Retro RPG 100 UI Sound Effects/033_Denied_03.wav" id="5_w8hpb"]
+
+[sub_resource type="Animation" id="Animation_ooleo"]
+resource_name = "Close"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("DoorSmallTop:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.566667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 6, 0), Vector3(0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("DoorSmallBottom:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.566667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, -1.2, 0), Vector3(0, 0, 0)]
+}
+tracks/2/type = "audio"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("OpenAudio")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("3_n1bpq")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/2/use_blend = true
+
+[sub_resource type="Animation" id="Animation_k51fq"]
+resource_name = "Closed"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("DoorSmallTop:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("DoorSmallBottom:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_opvtu"]
+resource_name = "Open"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("DoorSmallTop:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.566667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 6, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("DoorSmallBottom:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.566667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, -1.2, 0)]
+}
+tracks/2/type = "audio"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("OpenAudio")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("3_n1bpq")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/2/use_blend = true
+
+[sub_resource type="Animation" id="Animation_vf6nv"]
+resource_name = "Opened"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("DoorSmallTop:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 6, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("DoorSmallBottom:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, -1.2, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_n1bpq"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("DoorSmallTop:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("DoorSmallBottom:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_vf6nv"]
+_data = {
+&"Close": SubResource("Animation_ooleo"),
+&"Closed": SubResource("Animation_k51fq"),
+&"Open": SubResource("Animation_opvtu"),
+&"Opened": SubResource("Animation_vf6nv"),
+&"RESET": SubResource("Animation_n1bpq")
+}
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_w8hpb"]
+size = Vector3(3, 5, 0.1)
+
+[node name="Door" type="Node3D" groups=["Door"]]
+script = ExtResource("1_vf6nv")
+
+[node name="DoorSmallTop" type="MeshInstance3D" parent="."]
+mesh = ExtResource("2_n1bpq")
+
+[node name="DoorSmallBottom" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_k51fq")
+skeleton = NodePath("../..")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_vf6nv")
+}
+
+[node name="OpenAudio" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+
+[node name="LockedAudio" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+stream = ExtResource("5_w8hpb")
+
+[node name="InteractableNorth" parent="." instance=ExtResource("5_vtf4t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, -0.2)
+Interaction = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="InteractableNorth"]
+shape = SubResource("BoxShape3D_w8hpb")
+
+[node name="InteractableSouth" parent="." instance=ExtResource("5_vtf4t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0.2)
+Interaction = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="InteractableSouth"]
+shape = SubResource("BoxShape3D_w8hpb")
+
+[connection signal="Clicked" from="InteractableNorth" to="." method="OnInteracted"]
+[connection signal="Clicked" from="InteractableSouth" to="." method="OnInteracted"]

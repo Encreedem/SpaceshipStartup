@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://b6140vk3af1ty"]
+
+[ext_resource type="Texture2D" uid="uid://nilyf58xnsil" path="res://Assets/2D/Kenney/Puzzle Assets 2/Tiles black/tileBlack_01.png" id="1_xigkr"]
+[ext_resource type="Script" uid="uid://ddfjo52u7ykgy" path="res://Scenes/Interactables/PipePuzzle/PipeTile.cs" id="2_05p32"]
+[ext_resource type="PackedScene" uid="uid://yluwo8g0gjx3" path="res://Scenes/Interactables/Interactable3D.tscn" id="2_xigkr"]
+[ext_resource type="AudioStream" uid="uid://bo5cspd484x24" path="res://Assets/SFX/Pixabay/button-202966_trimmed.mp3" id="4_rw2dn"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_v3v8j"]
+size = Vector3(1.2, 1.2, 0.05)
+
+[node name="PipeTile" type="Sprite3D"]
+transform = Transform3D(1.56, 0, 0, 0, 1.56, 0, 0, 0, 1.56, 0, 0, 0)
+texture = ExtResource("1_xigkr")
+script = ExtResource("2_05p32")
+
+[node name="PipePivot" type="Node3D" parent="."]
+
+[node name="PipeSprite" type="Sprite3D" parent="PipePivot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.01)
+sorting_offset = 1.0
+
+[node name="Interactable3D" parent="." instance=ExtResource("2_xigkr")]
+Interaction = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Interactable3D"]
+shape = SubResource("BoxShape3D_v3v8j")
+
+[node name="InteractionAudio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_rw2dn")
+volume_db = -5.0
+
+[connection signal="Clicked" from="Interactable3D" to="." method="OnClicked"]

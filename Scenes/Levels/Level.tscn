@@ -1,0 +1,2033 @@
+[gd_scene load_steps=145 format=3 uid="uid://hu71rfs0dub1"]
+
+[ext_resource type="Script" uid="uid://bv8lefw8equb0" path="res://Scenes/Levels/Level.cs" id="1_echjq"]
+[ext_resource type="ArrayMesh" uid="uid://ckcms7yrtc3bq" path="res://Assets/3D/ThisIsBranden/Spaceship_Modules/Hall_Junction_X.res" id="2_flwvg"]
+[ext_resource type="Texture2D" uid="uid://cith0gdvm8ylq" path="res://Assets/UI/Kenney/CursorPack/Outline/Default/cursor_none.png" id="2_v5qxt"]
+[ext_resource type="ArrayMesh" uid="uid://qb0pdmmk4gap" path="res://Assets/3D/ThisIsBranden/Spaceship_Modules/Door_Door_Large.res" id="3_a1gik"]
+[ext_resource type="Texture2D" uid="uid://dxs1qcti0eboo" path="res://Assets/UI/Kenney/CursorPack/Outline/Double/cursor_cogs.png" id="3_uxcut"]
+[ext_resource type="Texture2D" uid="uid://bq17jq5g5qvs8" path="res://Assets/UI/Kenney/CursorPack/Outline/Double/look_a.png" id="3_yny8a"]
+[ext_resource type="ArrayMesh" uid="uid://c7au6sgmmrjxt" path="res://Assets/3D/ThisIsBranden/Spaceship_Modules/Room_Small.res" id="4_umfvy"]
+[ext_resource type="ArrayMesh" uid="uid://c8rxjob2rwdc0" path="res://Assets/3D/ThisIsBranden/Spaceship_Modules/Hall_Door_End.res" id="5_8loo1"]
+[ext_resource type="Texture2D" uid="uid://ccjsm8o1ia1n7" path="res://Assets/UI/Kenney/CursorPack/Outline/Double/cursor_help.png" id="5_l0e0h"]
+[ext_resource type="ArrayMesh" uid="uid://pepwagratbxu" path="res://Assets/3D/ThisIsBranden/Spaceship_Modules/Hall_Light_90Turn.res" id="6_4hk1l"]
+[ext_resource type="Texture2D" uid="uid://chreqjd4mfko5" path="res://Assets/UI/Kenney/CursorPack/Outline/Double/navigation_n.png" id="6_fnflu"]
+[ext_resource type="ArrayMesh" uid="uid://cdhjtvf3lm1o3" path="res://Assets/3D/ThisIsBranden/Spaceship_Modules/Door_Big_L.res" id="7_bi7sv"]
+[ext_resource type="Texture2D" uid="uid://bumxjbm0ec00b" path="res://Assets/UI/Kenney/CursorPack/Outline/Double/navigation_s.png" id="7_l0e0h"]
+[ext_resource type="Texture2D" uid="uid://g7qqxstd4blf" path="res://Assets/UI/Kenney/CursorPack/Outline/Double/navigation_w.png" id="7_v3g0q"]
+[ext_resource type="Texture2D" uid="uid://b7ine6gjvbo6d" path="res://Assets/UI/Kenney/CursorPack/Outline/Double/navigation_e.png" id="8_1rviw"]
+[ext_resource type="ArrayMesh" uid="uid://6bfm6eijixbn" path="res://Assets/3D/ThisIsBranden/Spaceship_Modules/Door_Big_R.res" id="8_jk42q"]
+[ext_resource type="ArrayMesh" uid="uid://bpfjvy73tf7kf" path="res://Assets/3D/ThisIsBranden/Spaceship_Modules/Room_Long_L.res" id="11_1rxo4"]
+[ext_resource type="PackedScene" uid="uid://bfu74n7yequtq" path="res://Scenes/Levels/MapNode.tscn" id="11_a1gik"]
+[ext_resource type="ArrayMesh" uid="uid://558trg8vwlq3" path="res://Assets/3D/ThisIsBranden/Spaceship_Modules/Room_Long_R.res" id="12_x2ay6"]
+[ext_resource type="ArrayMesh" uid="uid://bdiw7aql5222l" path="res://Assets/3D/ThisIsBranden/Spaceship_Modules/Hall_Door_SmallOne.res" id="13_k3aso"]
+[ext_resource type="ArrayMesh" uid="uid://5oxtvsecnxlr" path="res://Assets/3D/ThisIsBranden/Spaceship_Modules/Hall_End.res" id="14_803qd"]
+[ext_resource type="PackedScene" uid="uid://rtffafgki4ld" path="res://Scenes/Characters/Player.tscn" id="16_umfvy"]
+[ext_resource type="Texture2D" uid="uid://jap7jubr3c50" path="res://Assets/2D/My Assets/BackupGenerator/Background.png" id="17_x2ay6"]
+[ext_resource type="Texture2D" uid="uid://s81ijtqdf0rr" path="res://Assets/2D/My Assets/BackupGenerator/Crystal Holder.png" id="18_k3aso"]
+[ext_resource type="Texture2D" uid="uid://cd0uch1yfdiiw" path="res://Assets/2D/My Assets/BackupGenerator/Fan Background.png" id="19_803qd"]
+[ext_resource type="PackedScene" uid="uid://brsxw6imgtsy8" path="res://Assets/3D/Quaternius Dev/Sci-Fi Essentials Kit/Prop_Locker.gltf" id="19_qadev"]
+[ext_resource type="Texture2D" uid="uid://da3bo56g281yx" path="res://Assets/2D/My Assets/BackupGenerator/Fan Propeller.png" id="20_ba3al"]
+[ext_resource type="PackedScene" uid="uid://5kq2qrokh1c0" path="res://Scenes/Interactables/Door.tscn" id="21_cavhp"]
+[ext_resource type="Texture2D" uid="uid://ccfy24vfae21x" path="res://Assets/2D/My Assets/BackupGenerator/Fan Grid.png" id="21_v5qxt"]
+[ext_resource type="Texture2D" uid="uid://cumhuow2xhsaq" path="res://Assets/2D/My Assets/BackupGenerator/Crystal.png" id="22_uxcut"]
+[ext_resource type="PackedScene" uid="uid://cdmeoq3c7s1ew" path="res://Scenes/Interactables/Inspectable.tscn" id="24_k3aso"]
+[ext_resource type="Script" uid="uid://bo71n1kqj4uuo" path="res://Scenes/Interactables/BackupGenerator.cs" id="26_5l12v"]
+[ext_resource type="PackedScene" uid="uid://uwrerq21c4h" path="res://Assets/3D/Quaternius Dev/Modular SciFi MegaKit/Props/Prop_PipeHolder.gltf" id="27_oj8rt"]
+[ext_resource type="PackedScene" uid="uid://djq3p53hdd54e" path="res://Assets/3D/Quaternius Dev/Modular SciFi MegaKit/Props/Prop_Fan_Small.gltf" id="28_6uwbv"]
+[ext_resource type="Texture2D" uid="uid://dhh63a4whwi1h" path="res://Assets/2D/My Assets/BackupGenerator/Center Energy.png" id="29_q0a2u"]
+[ext_resource type="Texture2D" uid="uid://cx6683k3h51pj" path="res://Assets/2D/My Assets/BackupGenerator/Center Energy Capacity.png" id="30_h4mer"]
+[ext_resource type="Texture2D" uid="uid://cwnkl4cpw2gce" path="res://Assets/2D/My Assets/BackupGenerator/Center Energy Over.png" id="30_ivljt"]
+[ext_resource type="Texture2D" uid="uid://dy4xoq5ix32cp" path="res://Assets/2D/My Assets/BackupGenerator/Charger Background.png" id="33_i38ee"]
+[ext_resource type="Texture2D" uid="uid://brt5jd8sw2beg" path="res://Assets/2D/My Assets/BackupGenerator/Charger Button.png" id="34_4862x"]
+[ext_resource type="Texture2D" uid="uid://dhpsx1m6crp5m" path="res://Assets/2D/My Assets/BackupGenerator/Main Power Holder.png" id="34_ivljt"]
+[ext_resource type="Texture2D" uid="uid://b04vct1at6uos" path="res://Assets/2D/My Assets/BackupGenerator/Main Power Switch.png" id="35_007ws"]
+[ext_resource type="Texture2D" uid="uid://duh7d2yn8i5r7" path="res://Assets/2D/My Assets/BackupGenerator/Charger Button Pressed.png" id="35_hpda1"]
+[ext_resource type="Texture2D" uid="uid://bafk8vyd64qo3" path="res://Assets/2D/My Assets/BackupGenerator/Switches Holder.png" id="36_5l12v"]
+[ext_resource type="Texture2D" uid="uid://dkbxnbu061v26" path="res://Assets/2D/My Assets/BackupGenerator/Charger Left Shielding.png" id="36_qcevt"]
+[ext_resource type="Texture2D" uid="uid://cfcy1v8me5fw7" path="res://Assets/2D/My Assets/BackupGenerator/Charger Right Shielding.png" id="37_06ns0"]
+[ext_resource type="Texture2D" uid="uid://bm6juxy7gnxi1" path="res://Assets/2D/My Assets/BackupGenerator/Charger Rotator.png" id="38_4862x"]
+[ext_resource type="PackedScene" uid="uid://yluwo8g0gjx3" path="res://Scenes/Interactables/Interactable3D.tscn" id="38_rgg8d"]
+[ext_resource type="Texture2D" uid="uid://k0omc8x366p0" path="res://Assets/2D/My Assets/BackupGenerator/Charger Foreground.png" id="38_tiens"]
+[ext_resource type="PackedScene" uid="uid://bkloicilc1sm4" path="res://Scenes/Interactables/Gauge.tscn" id="39_5l12v"]
+[ext_resource type="Texture2D" uid="uid://dsampep62dqlh" path="res://Assets/2D/My Assets/BackupGenerator/Gauge Icon Input.png" id="40_xka4a"]
+[ext_resource type="Texture2D" uid="uid://b77gijoidcfir" path="res://Assets/2D/My Assets/BackupGenerator/Gauge Icon Distribution.png" id="41_v2ovy"]
+[ext_resource type="Texture2D" uid="uid://dsdfha5h570nb" path="res://Assets/2D/My Assets/BackupGenerator/Gauge Icon Temperature.png" id="42_rgg8d"]
+[ext_resource type="AudioStream" uid="uid://bgg3wk0dxb50e" path="res://Assets/SFX/Leohpaz/Retro RPG 100 UI Sound Effects/033_Denied_03.wav" id="46_1d4wk"]
+[ext_resource type="ArrayMesh" uid="uid://35d7yq23uvqv" path="res://Assets/3D/ThisIsBranden/Spaceship_Modules/Door_Small_Top.res" id="46_2cvwo"]
+[ext_resource type="AudioStream" uid="uid://dhd4v3tr5lnrd" path="res://Assets/SFX/Pixabay/switch-150130.mp3" id="46_retsv"]
+[ext_resource type="ArrayMesh" uid="uid://buxom7qnte8uu" path="res://Assets/3D/ThisIsBranden/Spaceship_Modules/Door_Small_Bottom.res" id="47_1d4wk"]
+[ext_resource type="PackedScene" uid="uid://duntnlbfmp4nh" path="res://Scenes/Interactables/Switch.tscn" id="47_tiens"]
+[ext_resource type="Texture2D" uid="uid://c361yrmdjfhqm" path="res://Assets/2D/My Assets/BackupGenerator/Switch Icon Life.png" id="49_retsv"]
+[ext_resource type="Texture2D" uid="uid://ble5c6s0l5ptn" path="res://Assets/2D/My Assets/BackupGenerator/Switch Icon Fan.png" id="50_3d4de"]
+[ext_resource type="Texture2D" uid="uid://unpjqnmjslw6" path="res://Assets/2D/My Assets/BackupGenerator/Switch Icon Decoration 1.png" id="50_c1adh"]
+[ext_resource type="Texture2D" uid="uid://bpoklm34yhga" path="res://Assets/2D/My Assets/BackupGenerator/Switch Icon Decoration 2.png" id="51_wr6c8"]
+[ext_resource type="Texture2D" uid="uid://chbkvrjsfa8ly" path="res://Assets/2D/My Assets/BackupGenerator/Switch Icon Decoration 3.png" id="52_u4xmi"]
+[ext_resource type="Texture2D" uid="uid://b6k8ubj2gb8e1" path="res://Assets/2D/My Assets/BackupGenerator/Switch Icon Energy.png" id="53_cavhp"]
+[ext_resource type="AudioStream" uid="uid://cdq020lj6jitp" path="res://Assets/SFX/Pixabay/sci-fi-sliding-door-burst-27425.mp3" id="55_3d4de"]
+[ext_resource type="AudioStream" uid="uid://bhm284xu6k5fe" path="res://Assets/SFX/Pixabay/sci-fi-wined-up-101285.mp3" id="57_jsm2e"]
+[ext_resource type="AudioStream" uid="uid://ye4s716d7ngr" path="res://Assets/SFX/Pixabay/generator-87782_loop.mp3" id="58_ap5pb"]
+[ext_resource type="AudioStream" uid="uid://r4i4n0r2vnht" path="res://Assets/SFX/Pixabay/generator_off-93478.mp3" id="59_c1adh"]
+[ext_resource type="AudioStream" uid="uid://btaghm6kxevl1" path="res://Assets/SFX/Pixabay/power-on-39172.mp3" id="61_wr6c8"]
+[ext_resource type="PackedScene" uid="uid://cbb1wgxxlho26" path="res://Scenes/Interactables/ShipStatusScreen/ShipStatusScreen.tscn" id="63_u4xmi"]
+[ext_resource type="PackedScene" uid="uid://crycnwp6e3bss" path="res://Assets/3D/Quaternius Dev/Modular SciFi MegaKit/Props/Prop_Barrel_Large.gltf" id="65_3u0pf"]
+[ext_resource type="PackedScene" uid="uid://pulosu60s4ag" path="res://Assets/3D/Quaternius Dev/Modular SciFi MegaKit/Props/Prop_Cable_1.gltf" id="66_08i3c"]
+[ext_resource type="PackedScene" uid="uid://ckqjjlvgxa26o" path="res://Assets/3D/Quaternius Dev/Modular SciFi MegaKit/Props/Prop_Cable_3.gltf" id="67_keodv"]
+[ext_resource type="PackedScene" uid="uid://cfmcu0pr2r6mi" path="res://Assets/3D/Quaternius Dev/Modular SciFi MegaKit/Props/Prop_Light_Small.gltf" id="67_rvbme"]
+[ext_resource type="PackedScene" uid="uid://bf6sig7bdkuic" path="res://Assets/3D/Quaternius Dev/Modular SciFi MegaKit/Props/Prop_Clamp.gltf" id="70_slepp"]
+[ext_resource type="PackedScene" uid="uid://6v1138i2xa8y" path="res://Assets/3D/Quaternius Dev/Modular SciFi MegaKit/Props/Prop_Crate3.gltf" id="71_n4pjl"]
+[ext_resource type="PackedScene" uid="uid://wgkn3tqnr7i5" path="res://Assets/3D/Quaternius Dev/Modular SciFi MegaKit/Props/Prop_Vent_Big.gltf" id="75_6uwbv"]
+[ext_resource type="PackedScene" uid="uid://bml0mm65otc4t" path="res://Assets/3D/Quaternius Dev/Sci-Fi Essentials Kit/Prop_Shelves_WideTall.gltf" id="77_cmfsr"]
+[ext_resource type="PackedScene" uid="uid://bbhwjxsf22qpi" path="res://Assets/3D/Quaternius Dev/Sci-Fi Essentials Kit/Prop_Syringe.gltf" id="78_laxht"]
+[ext_resource type="PackedScene" uid="uid://otb43eldyxhj" path="res://Assets/3D/Quaternius Dev/Sci-Fi Essentials Kit/Prop_KeyCard.gltf" id="79_oukhj"]
+[ext_resource type="PackedScene" uid="uid://era5ivl27akj" path="res://Assets/3D/Quaternius Dev/Sci-Fi Essentials Kit/Prop_Shelves_WideShort.gltf" id="80_w5ibr"]
+[ext_resource type="PackedScene" uid="uid://crwjnww6spput" path="res://Assets/3D/Quaternius Dev/Sci-Fi Essentials Kit/Prop_HealthPack.gltf" id="81_iyokc"]
+[ext_resource type="PackedScene" uid="uid://h80b08jhlaua" path="res://Assets/3D/Quaternius Dev/Sci-Fi Essentials Kit/Prop_Grenade.gltf" id="82_xb4kr"]
+[ext_resource type="PackedScene" uid="uid://d128yj53o603p" path="res://Assets/3D/Quaternius Dev/Sci-Fi Essentials Kit/Prop_Crate_Large.gltf" id="83_w5ibr"]
+[ext_resource type="PackedScene" uid="uid://beqggq217jbyf" path="res://Assets/3D/Quaternius Dev/Sci-Fi Essentials Kit/Prop_Barrel2_Closed.gltf" id="84_iyokc"]
+[ext_resource type="PackedScene" uid="uid://dikxsk6g8vu76" path="res://Assets/3D/Quaternius Dev/Sci-Fi Essentials Kit/Prop_Crate_Tarp.gltf" id="85_xb4kr"]
+[ext_resource type="PackedScene" uid="uid://48jti0er48gc" path="res://Assets/3D/Quaternius Dev/Sci-Fi Essentials Kit/Prop_Crate.gltf" id="86_oxafg"]
+[ext_resource type="Texture2D" uid="uid://c2ybbts3xghgj" path="res://Assets/2D/My Assets/LifeSupport/Full Pod.png" id="87_id1vu"]
+[ext_resource type="PackedScene" uid="uid://cka1l7wd4umlj" path="res://Assets/3D/Quaternius Dev/Sci-Fi Essentials Kit/Prop_Ammo_Closed.gltf" id="87_oxafg"]
+[ext_resource type="Script" uid="uid://sjdmwm06hnwl" path="res://Scenes/Interactables/LifeSupportFilter.cs" id="87_u1y5f"]
+[ext_resource type="PackedScene" uid="uid://c7jcjhfyreftg" path="res://Assets/3D/Quaternius Dev/Sci-Fi Essentials Kit/Gun_Rifle.gltf" id="88_3qdwh"]
+[ext_resource type="PackedScene" uid="uid://mwxvcykviwfq" path="res://Scenes/Interactables/BreathablePoster.tscn" id="88_7fnhw"]
+[ext_resource type="PackedScene" uid="uid://dpg4yuav3xpuy" path="res://Scenes/Interactables/Chest.tscn" id="88_g453v"]
+[ext_resource type="Script" uid="uid://uwhq7j7b00rx" path="res://Scenes/Levels/WestDoorControl.cs" id="88_qw7w5"]
+[ext_resource type="Script" uid="uid://co3is00v7y8h1" path="res://Scenes/Interactables/Keycard.cs" id="89_7fnhw"]
+[ext_resource type="PackedScene" uid="uid://cvuuxs4tdppc5" path="res://Assets/3D/Quaternius Dev/Sci-Fi Essentials Kit/Gun_SMG_Ammo.gltf" id="89_g453v"]
+[ext_resource type="PackedScene" uid="uid://t7xt86rg5nx0" path="res://Assets/3D/Quaternius Dev/Sci-Fi Essentials Kit/Prop_Barrel1.gltf" id="90_3qdwh"]
+[ext_resource type="AudioStream" uid="uid://c5g5u7j8xigpm" path="res://Assets/SFX/Leohpaz/Retro RPG 100 UI Sound Effects/018_Confirm_08.wav" id="90_ahpfk"]
+[ext_resource type="PackedScene" uid="uid://bykjci5kldqx" path="res://Scenes/Interactables/PipePuzzle/PipePuzzle.tscn" id="90_g453v"]
+[ext_resource type="ArrayMesh" uid="uid://dbb2k15hs0pxl" path="res://Assets/3D/ThisIsBranden/Spaceship_Modules/Prop_DoorControl.res" id="91_g453v"]
+[ext_resource type="PackedScene" uid="uid://bxt83om1bxkbx" path="res://Scenes/Interactables/LifeSupport/LifeSupport.tscn" id="93_ahpfk"]
+[ext_resource type="AudioStream" uid="uid://n4y43cja1upt" path="res://Assets/SFX/Pixabay/large-underwater-explosion-190270.mp3" id="99_qdr3s"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_id1vu"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_u1y5f"]
+material = SubResource("StandardMaterial3D_id1vu")
+top_radius = 0.25
+bottom_radius = 0.25
+height = 4.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_atybi"]
+material = SubResource("StandardMaterial3D_id1vu")
+size = Vector3(0.09, 0.725, 0.105)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ahpfk"]
+material = SubResource("StandardMaterial3D_id1vu")
+size = Vector3(0.16, 0.155, 0.195)
+
+[sub_resource type="Animation" id="Animation_4coyl"]
+resource_name = "Close"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("DoorBigL:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(-2, 0, 0), Vector3(0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("DoorBigR:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(2, 0, 0), Vector3(0, 0, 0)]
+}
+tracks/2/type = "audio"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("OpenAudio")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("55_3d4de")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/2/use_blend = true
+
+[sub_resource type="Animation" id="Animation_1d4wk"]
+resource_name = "Closed"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("DoorBigL:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("DoorBigR:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_f25sv"]
+resource_name = "Open"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("DoorBigL:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(-2, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("DoorBigR:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(2, 0, 0)]
+}
+tracks/2/type = "audio"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("OpenAudio")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("55_3d4de")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/2/use_blend = true
+
+[sub_resource type="Animation" id="Animation_pfpwr"]
+resource_name = "Opened"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("DoorBigL:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-2, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("DoorBigR:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(2, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_0ks6q"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("DoorBigL:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("DoorBigR:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_c2xmw"]
+_data = {
+&"Close": SubResource("Animation_4coyl"),
+&"Closed": SubResource("Animation_1d4wk"),
+&"Open": SubResource("Animation_f25sv"),
+&"Opened": SubResource("Animation_pfpwr"),
+&"RESET": SubResource("Animation_0ks6q")
+}
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0ks6q"]
+size = Vector3(2.50806, 3.00024, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jsm2e"]
+albedo_color = Color(0.442911, 0.442911, 0.442911, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ap5pb"]
+material = SubResource("StandardMaterial3D_jsm2e")
+size = Vector3(21.03, 29.525, 3.575)
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_xka4a"]
+viewport_path = NodePath("Interactables/BackupGenerator/Center Energy/SubViewport")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3d4de"]
+size = Vector3(0.8, 0.8, 0.1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_57jb0"]
+size = Vector3(2.25098, 0.577148, 0.140625)
+
+[sub_resource type="Animation" id="Animation_ap5pb"]
+resource_name = "ChargeShutoff"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Charger Button:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Charger Button Pressed:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Charger Left Shielding:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(0.5, 1),
+"update": 0,
+"values": [Vector3(-0.766, 0, 0.04), Vector3(0, 0, 0.04)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Charger Right Shielding:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(0.5, 1),
+"update": 0,
+"values": [Vector3(0.726719, 0, 0.0400009), Vector3(0, 0, 0.04)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Charger Rotator:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(0.5, 1),
+"update": 0,
+"values": [Vector3(0, 6.3573e-08, 0), Vector3(0, 0, -3.14159)]
+}
+tracks/5/type = "audio"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Audio/GeneratorOff")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("59_c1adh")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/5/use_blend = true
+
+[sub_resource type="Animation" id="Animation_jsm2e"]
+resource_name = "Charging"
+length = 11.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Charger Button:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Charger Button Pressed:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Charger Left Shielding:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-0.765552, 0, 0.0400009)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Charger Right Shielding:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0.726719, 0, 0.0400009)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Charger Rotator:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 10.5333, 11.5),
+"transitions": PackedFloat32Array(2, 0.5, 1),
+"update": 0,
+"values": [Vector3(0, 6.3573e-08, 0), Vector3(0, 0, -174.533), Vector3(0, 0, -180.816)]
+}
+tracks/5/type = "audio"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Audio/Charge")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.1765,
+"stream": ExtResource("57_jsm2e")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/5/use_blend = true
+
+[sub_resource type="Animation" id="Animation_tiens"]
+resource_name = "CloseShielding"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Charger Left Shielding:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(0.5, 1),
+"update": 0,
+"values": [Vector3(-0.765552, 0, 0.0400009), Vector3(0, 0, 0.04)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Charger Right Shielding:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(0.5, 1),
+"update": 0,
+"values": [Vector3(0.726719, 0, 0.0400009), Vector3(0, 0, 0.04)]
+}
+tracks/2/type = "audio"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Audio/Sliding")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("55_3d4de")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/2/use_blend = true
+
+[sub_resource type="Animation" id="Animation_c1adh"]
+resource_name = "FullyChargedShutoff"
+length = 3.0
+tracks/0/type = "audio"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Audio/GeneratorOff")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("59_c1adh")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/0/use_blend = true
+
+[sub_resource type="Animation" id="Animation_cavhp"]
+resource_name = "OpenShielding"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Charger Left Shielding:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(0.5, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0.04), Vector3(-0.765552, 0, 0.0400009)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Charger Right Shielding:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(0.5, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0.04), Vector3(0.726719, 0, 0.0400009)]
+}
+tracks/2/type = "audio"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Audio/Sliding")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("55_3d4de")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/2/use_blend = true
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Charger Button Pressed:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Charger Button:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_3d4de"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Charger Right Shielding:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0.04)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Charger Left Shielding:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0.04)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Charger Button Pressed:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Charger Button:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Charger Rotator:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 6.3573e-08, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_retsv"]
+resource_name = "ShieldingClosed"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Charger Left Shielding:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0.04)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Charger Right Shielding:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0.04)]
+}
+
+[sub_resource type="Animation" id="Animation_aaijh"]
+resource_name = "ShieldingOpen"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Charger Left Shielding:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-0.765552, 0, 0.0400009)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Charger Right Shielding:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0.726719, 0, 0.0400009)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Charger Button Pressed:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Charger Button:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_jsm2e"]
+_data = {
+&"ChargeShutoff": SubResource("Animation_ap5pb"),
+&"Charging": SubResource("Animation_jsm2e"),
+&"CloseShielding": SubResource("Animation_tiens"),
+&"FullyChargedShutoff": SubResource("Animation_c1adh"),
+&"OpenShielding": SubResource("Animation_cavhp"),
+&"RESET": SubResource("Animation_3d4de"),
+&"ShieldingClosed": SubResource("Animation_retsv"),
+&"ShieldingOpen": SubResource("Animation_aaijh")
+}
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c2xgn"]
+albedo_color = Color(0, 0.981393, 0.755868, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_atybi"]
+material = SubResource("StandardMaterial3D_c2xgn")
+top_radius = 0.55
+bottom_radius = 0.49
+height = 0.77
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qdr3s"]
+size = Vector3(0.157227, 0.146484, 0.106445)
+
+[sub_resource type="Animation" id="Animation_qdr3s"]
+resource_name = "PickUpFilter"
+length = 1.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("FullPod:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 1.3, 1.6),
+"transitions": PackedFloat32Array(1, 1, 2, 1),
+"update": 0,
+"values": [Vector3(0, 0.022964, -0.00356483), Vector3(0, 0.475739, -0.743804), Vector3(0, 0.475739, -0.743804), Vector3(0, -0.798357, -0.743804)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("FullPod:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(-0.24932, -2.2651, 0.20262), Vector3(-0.0805644, 3.07205, 0.190547)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("FullPod:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("FilterInteractable:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_2cvwo"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("FullPod:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0.022964, -0.00356483)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("FullPod:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-0.24932, -2.2651, 0.20262)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("FullPod:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("FilterInteractable:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_1d4wk"]
+_data = {
+&"PickUpFilter": SubResource("Animation_qdr3s"),
+&"RESET": SubResource("Animation_2cvwo")
+}
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_g453v"]
+size = Vector3(0.05, 1.04297, 0.367188)
+
+[sub_resource type="Animation" id="Animation_atybi"]
+resource_name = "DropKeycard"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Prop_KeyCard:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(2, 1),
+"update": 0,
+"values": [Vector3(0.0706911, 2.58506, -0.0134733), Vector3(0.0706911, 0.581325, -0.0134733)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Prop_KeyCard:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(2, 1),
+"update": 0,
+"values": [Vector3(2.56996e-08, 1.5708, -0.612593), Vector3(1.47475, 1.5708, -0.612593)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Prop_KeyCard:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="Animation" id="Animation_u1y5f"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Prop_KeyCard:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0.106202, 1.14484)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Prop_KeyCard:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Prop_KeyCard:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 1.5708, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_id1vu"]
+resource_name = "SwipeKeycard"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Prop_KeyCard:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 1.06667, 1.8),
+"transitions": PackedFloat32Array(0.5, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0.106202, 1.14484), Vector3(0, 1.62894, 0.826326), Vector3(0, 1.62894, 0.826326), Vector3(0.0706911, 2.58506, -0.0134733)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Prop_KeyCard:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Prop_KeyCard:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1, 1.06667, 1.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 1.5708, 0), Vector3(-8.25663e-09, 1.5708, 0.190031), Vector3(-8.25663e-09, 1.5708, 0.190031), Vector3(2.56996e-08, 1.5708, -0.612593)]
+}
+tracks/3/type = "audio"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("DoorUnlockAudio")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("90_ahpfk")
+}],
+"times": PackedFloat32Array(1.96667)
+}
+tracks/3/use_blend = true
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_qdr3s"]
+_data = {
+&"DropKeycard": SubResource("Animation_atybi"),
+&"RESET": SubResource("Animation_u1y5f"),
+&"SwipeKeycard": SubResource("Animation_id1vu")
+}
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7fnhw"]
+size = Vector3(0.244141, 0.397461, 0.0419922)
+
+[sub_resource type="Animation" id="Animation_n70h6"]
+resource_name = "PickUp"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Prop_KeyCard:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.9, 2.21, 2.5, 2.93333),
+"transitions": PackedFloat32Array(0.5, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0.285611, -0.184028, 0.654555), Vector3(0.285611, -0.184028, 0.654555), Vector3(0.285611, -0.0457249, 0.654555), Vector3(0.285611, -1.24179, 0.654555)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Prop_KeyCard:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.36, 1.03333, 2.1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 0, 0), Vector3(0, 0, 0), Vector3(0, -6.28319, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Prop_KeyCard:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="Animation" id="Animation_qw7w5"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Prop_KeyCard:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Prop_KeyCard:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Prop_KeyCard:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ahpfk"]
+_data = {
+&"PickUp": SubResource("Animation_n70h6"),
+&"RESET": SubResource("Animation_qw7w5")
+}
+
+[sub_resource type="Animation" id="Animation_3vs75"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Camera3D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 2, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Camera3D:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_c2xmw"]
+resource_name = "Stumble"
+length = 6.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Camera3D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.133333, 0.6, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 2, 0), Vector3(4.5082e-15, 1.78188, -0.317235), Vector3(0.217278, 1.85798, -0.317235), Vector3(0, 2, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Camera3D:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.133333, 0.6, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(-7.28384e-16, -1.86793e-17, 0.0512778), Vector3(2.75045e-16, -2.66247e-18, -0.0193557), Vector3(0, 0, 0)]
+}
+tracks/2/type = "audio"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../ExplosionAudio")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.4371,
+"stream": ExtResource("99_qdr3s")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/2/use_blend = true
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ljknx"]
+_data = {
+&"RESET": SubResource("Animation_3vs75"),
+&"Stumble": SubResource("Animation_c2xmw")
+}
+
+[node name="Level" type="Node3D"]
+script = ExtResource("1_echjq")
+InteractionCursors = Dictionary[int, Resource]({
+0: ExtResource("2_v5qxt"),
+1: ExtResource("3_yny8a"),
+2: ExtResource("3_uxcut"),
+3: ExtResource("5_l0e0h"),
+4: ExtResource("6_fnflu"),
+5: ExtResource("7_l0e0h"),
+6: ExtResource("7_v3g0q"),
+7: ExtResource("8_1rviw")
+})
+InteractionHotspots = Dictionary[int, Vector2]({
+0: Vector2(0, 0),
+1: Vector2(32, 32),
+2: Vector2(0, 0),
+3: Vector2(0, 0),
+4: Vector2(32, 32),
+5: Vector2(32, 32),
+6: Vector2(32, 32),
+7: Vector2(32, 32)
+})
+LightsEmergencyRange = 4.0
+
+[node name="Terrain" type="Node3D" parent="."]
+metadata/_edit_group_ = true
+metadata/_edit_lock_ = true
+
+[node name="Center" type="MeshInstance3D" parent="Terrain"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+mesh = ExtResource("2_flwvg")
+skeleton = NodePath("../..")
+
+[node name="DoorDoorLarge" type="MeshInstance3D" parent="Terrain"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, -4)
+mesh = ExtResource("3_a1gik")
+skeleton = NodePath("../..")
+
+[node name="BackupGenerator" type="MeshInstance3D" parent="Terrain"]
+transform = Transform3D(-0.5, 0, 4.37114e-08, 0, 0.5, 0, -4.37114e-08, 0, -0.5, 0, 0, 9)
+mesh = ExtResource("4_umfvy")
+skeleton = NodePath("../..")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Terrain/BackupGenerator" groups=["WhiteLight"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0475524, 6.75717, 2.28567)
+
+[node name="GeneratorDoorLampRed" type="OmniLight3D" parent="Terrain/BackupGenerator" groups=["WhiteLight"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0475523, 4.67951, 2.96017)
+visible = false
+light_color = Color(1, 0, 0, 1)
+light_energy = 1.171
+omni_range = 1.357
+
+[node name="GeneratorEntrance" type="MeshInstance3D" parent="Terrain"]
+transform = Transform3D(-0.5, 0, -7.5498e-08, 0, 0.5, 0, 7.5498e-08, 0, -0.5, 0, 0, 3.9963)
+mesh = ExtResource("5_8loo1")
+skeleton = NodePath("../..")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Terrain/GeneratorEntrance" groups=["WhiteLight"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.68434e-14, 6.68628, -1.78)
+
+[node name="EastCorner" type="MeshInstance3D" parent="Terrain"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 4, 0, 0)
+mesh = ExtResource("6_4hk1l")
+skeleton = NodePath("../..")
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="Terrain/EastCorner" groups=["WhiteLight"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0219364, 6.366, -2.7963)
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="Terrain/EastCorner" groups=["WhiteLight"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.90606, 6.366, -0.100706)
+
+[node name="WestCorner" type="MeshInstance3D" parent="Terrain"]
+transform = Transform3D(-2.18557e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.18557e-08, -4, 0, 0)
+mesh = ExtResource("6_4hk1l")
+skeleton = NodePath("../..")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Terrain/WestCorner" groups=["WhiteLight"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0577195, 6.366, -2.7963)
+
+[node name="OmniLight3D4" type="OmniLight3D" parent="Terrain/WestCorner" groups=["WhiteLight"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.90606, 6.366, -0.046545)
+
+[node name="WestRoomLong" type="MeshInstance3D" parent="Terrain"]
+transform = Transform3D(-2.18557e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.18557e-08, -9, 0, 4)
+mesh = ExtResource("11_1rxo4")
+skeleton = NodePath("../..")
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="Terrain/WestRoomLong" groups=["WhiteLight"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00304699, 6.75717, 2.26738)
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="Terrain/WestRoomLong" groups=["WhiteLight"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.82768, 7.2317, 0.0600262)
+light_energy = 0.02
+
+[node name="EastRoomLong" type="MeshInstance3D" parent="Terrain"]
+transform = Transform3D(-2.18557e-08, 0, -0.5, 0, 0.5, 0, 0.5, 0, -2.18557e-08, 9, 0, 4)
+mesh = ExtResource("12_x2ay6")
+skeleton = NodePath("../..")
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="Terrain/EastRoomLong" groups=["WhiteLight"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00304699, 6.75717, 2.26738)
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="Terrain/EastRoomLong" groups=["WhiteLight"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.10756, 7.2317, 0.0600262)
+
+[node name="WestTJunction" type="MeshInstance3D" parent="Terrain"]
+transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, -4, 0, 4)
+mesh = ExtResource("13_k3aso")
+skeleton = NodePath("../..")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Terrain/WestTJunction" groups=["WhiteLight"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.47516, 6.75717, 0.0500154)
+
+[node name="EastTJunction" type="MeshInstance3D" parent="Terrain"]
+transform = Transform3D(0.5, 0, 8.7423e-08, 0, 0.5, 0, -8.7423e-08, 0, 0.5, 4, 0, 4)
+mesh = ExtResource("13_k3aso")
+skeleton = NodePath("../..")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Terrain/EastTJunction" groups=["WhiteLight"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.47516, 6.75717, 0.0500154)
+
+[node name="WestDeadEnd" type="MeshInstance3D" parent="Terrain"]
+transform = Transform3D(-0.5, 0, 4.37114e-08, 0, 0.5, 0, -4.37114e-08, 0, -0.5, -4, 0, 8)
+mesh = ExtResource("14_803qd")
+skeleton = NodePath("../..")
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="Terrain/WestDeadEnd" groups=["WhiteLight"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.178784, 7.2317, -1.9389)
+
+[node name="EastDeadEnd" type="MeshInstance3D" parent="Terrain"]
+transform = Transform3D(-0.5, 0, 4.37114e-08, 0, 0.5, 0, -4.37114e-08, 0, -0.5, 4, 0, 8)
+mesh = ExtResource("14_803qd")
+skeleton = NodePath("../..")
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="Terrain/EastDeadEnd" groups=["WhiteLight"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.178784, 7.2317, -1.9389)
+
+[node name="CockpitEntrance" type="MeshInstance3D" parent="Terrain"]
+transform = Transform3D(0.5, 0, 3.17865e-08, 0, 0.5, 0, -3.17865e-08, 0, 0.5, 0, 0, -8)
+mesh = ExtResource("5_8loo1")
+
+[node name="Cockpit" type="MeshInstance3D" parent="Terrain"]
+transform = Transform3D(0.5, 0, 1.19209e-07, 0, 0.5, 0, -1.19209e-07, 0, 0.5, 0, 0, -13)
+mesh = ExtResource("4_umfvy")
+
+[node name="Decoration" type="Node3D" parent="."]
+
+[node name="Prop_Barrel_Large2" parent="Decoration" instance=ExtResource("65_3u0pf")]
+transform = Transform3D(0.948777, 0, 0.315947, 0, 1, 0, -0.315947, 0, 0.948777, -7.76374, 0, 2.83012)
+
+[node name="Prop_Light_Small2" parent="Decoration" instance=ExtResource("67_rvbme")]
+transform = Transform3D(0.711143, -3.10851e-08, -0.703047, 0.703047, -3.07312e-08, 0.711143, -4.37114e-08, -1, 4.62885e-16, -8.97741, 3.90122, 8.79092)
+
+[node name="Prop_Cable_12" parent="Decoration" instance=ExtResource("66_08i3c")]
+transform = Transform3D(-0.925969, 0, 0.377598, 0, 1, 0, -0.377598, 0, -0.925969, 0.636659, 0, 9.67243)
+
+[node name="Prop_Cable_32" parent="Decoration" instance=ExtResource("67_keodv")]
+transform = Transform3D(0.977012, 0, 0.213184, 0, 1, 0, -0.213184, 0, 0.977012, 8.45258, 0, 6.39562)
+
+[node name="Prop_Clamp2" parent="Decoration" instance=ExtResource("70_slepp")]
+transform = Transform3D(0.506636, -0.86216, 0, 0.86216, 0.506636, 0, 0, 0, 1, -7.25562, 0.907322, 8.79768)
+
+[node name="Prop_Clamp3" parent="Decoration" instance=ExtResource("70_slepp")]
+transform = Transform3D(0.506636, -0.86216, 0, 0.86216, 0.506636, 0, 0, 0, 1, -7.25562, 0.907322, 6.04443)
+
+[node name="Prop_Clamp4" parent="Decoration" instance=ExtResource("70_slepp")]
+transform = Transform3D(-0.506636, 0.86216, -8.74228e-08, 0.86216, 0.506636, 0, 4.42915e-08, -7.53724e-08, -1, -10.675, 0.907, 6.044)
+
+[node name="Prop_Crate32" parent="Decoration" instance=ExtResource("71_n4pjl")]
+transform = Transform3D(0.875338, 0, 0.483512, 0, 1, 0, -0.483512, 0, 0.875338, -9.87208, 0.496619, 5.75846)
+
+[node name="Prop_Crate33" parent="Decoration" instance=ExtResource("71_n4pjl")]
+transform = Transform3D(0.967916, 0, -0.251275, 0, 1, 0, 0.251275, 0, 0.967916, -8.32106, 0.5, 5.86729)
+
+[node name="Prop_Crate34" parent="Decoration" instance=ExtResource("71_n4pjl")]
+transform = Transform3D(0.999803, 0, -0.0198256, 0, 1, 0, 0.0198256, 0, 0.999803, -8.19753, 0.5, 7.49856)
+
+[node name="Prop_PipeHolder2" parent="Decoration" instance=ExtResource("27_oj8rt")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 9.93665, 0, 5.14486)
+
+[node name="Prop_Light_Small3" parent="Decoration" instance=ExtResource("67_rvbme")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 8.977, 3.901, 8.55779)
+
+[node name="Prop_Light_Small6" parent="Decoration" instance=ExtResource("67_rvbme")]
+transform = Transform3D(1, 0, -1.42109e-14, 0, 1, 0, 1.42109e-14, 0, 1, 8.977, 3.901, 8.55779)
+
+[node name="Prop_Light_Small7" parent="Decoration" instance=ExtResource("67_rvbme")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 4, 3.901, 8.80863)
+
+[node name="Prop_Light_Small8" parent="Decoration" instance=ExtResource("67_rvbme")]
+transform = Transform3D(1, 0, -1.42109e-14, 0, 1, 0, 1.42109e-14, 0, 1, 4, 3.901, 8.80863)
+
+[node name="Prop_Light_Small9" parent="Decoration" instance=ExtResource("67_rvbme")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -4, 3.901, 8.80863)
+
+[node name="Prop_Light_Small10" parent="Decoration" instance=ExtResource("67_rvbme")]
+transform = Transform3D(1, 0, -1.42109e-14, 0, 1, 0, 1.42109e-14, 0, 1, -4, 3.901, 8.80863)
+
+[node name="Prop_Fan_Small2" parent="Decoration" instance=ExtResource("28_6uwbv")]
+transform = Transform3D(1, 0, 0, 0, -1, -8.74228e-08, 0, 8.74228e-08, -1, 9, 3.867, 7.431)
+metadata/_edit_group_ = true
+
+[node name="AnimationPlayer" parent="Decoration/Prop_Fan_Small2" index="1"]
+autoplay = "Fan_Idle"
+
+[node name="Prop_Fan_Small3" parent="Decoration" instance=ExtResource("28_6uwbv")]
+transform = Transform3D(1, 0, 0, 0, -1, -8.74228e-08, 0, 8.74228e-08, -1, 4, 3.867, 4)
+metadata/_edit_group_ = true
+
+[node name="AnimationPlayer" parent="Decoration/Prop_Fan_Small3" index="1"]
+autoplay = "Fan_Idle"
+
+[node name="Prop_Fan_Small4" parent="Decoration" instance=ExtResource("28_6uwbv")]
+transform = Transform3D(1, 0, 0, 0, -1, -8.74228e-08, 0, 8.74228e-08, -1, -4, 3.867, 4)
+metadata/_edit_group_ = true
+
+[node name="AnimationPlayer" parent="Decoration/Prop_Fan_Small4" index="1"]
+autoplay = "Fan_Idle"
+
+[node name="Prop_Locker2" parent="Decoration" instance=ExtResource("19_qadev")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -10.4289, 0, 4.92408)
+
+[node name="Prop_Locker3" parent="Decoration" instance=ExtResource("19_qadev")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -10.4289, 0, 3.58068)
+
+[node name="Prop_Vent_Big2" parent="Decoration" instance=ExtResource("75_6uwbv")]
+transform = Transform3D(1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 3.96616, 3.82103, 7.6298)
+
+[node name="Prop_Shelves_WideTall2" parent="Decoration" instance=ExtResource("77_cmfsr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.03974, 0, 2.81078)
+
+[node name="Prop_Syringe2" parent="Decoration" instance=ExtResource("78_laxht")]
+transform = Transform3D(-3.38353e-08, -0.774061, 0.633111, 1, -4.37114e-08, 0, 2.76741e-08, 0.633111, 0.774061, 8.5701, 2.00592, 2.74942)
+
+[node name="SpotLight3D" type="OmniLight3D" parent="Decoration/Prop_Syringe2"]
+transform = Transform3D(0.979806, 0.0526433, -0.192895, 0.0766203, -0.98993, 0.119028, -0.184686, -0.131404, -0.973973, 1.66893e-06, 0.23214, 0.0659857)
+light_color = Color(0, 1, 0, 1)
+light_energy = 0.839
+omni_range = 0.947
+
+[node name="Prop_Syringe3" parent="Decoration" instance=ExtResource("78_laxht")]
+transform = Transform3D(-0.0320932, 0.99943, 0.0104583, 0.289816, -0.00070878, 0.957082, 0.956544, 0.0337468, -0.289628, 8.46463, 0.540578, 2.78119)
+
+[node name="Prop_Shelves_WideShort2" parent="Decoration" instance=ExtResource("80_w5ibr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.00361, 0, 2.92993)
+
+[node name="Prop_HealthPack2" parent="Decoration" instance=ExtResource("81_iyokc")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7.17506, 1.74335, 5.38648)
+
+[node name="Prop_Grenade2" parent="Decoration" instance=ExtResource("82_xb4kr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.76233, 1.31674, 2.83185)
+
+[node name="Prop_Grenade3" parent="Decoration" instance=ExtResource("82_xb4kr")]
+transform = Transform3D(-0.929918, 0, -0.367767, 0, 1, 0, 0.367767, 0, -0.929918, -9.79406, 1.31674, 3.05979)
+
+[node name="Prop_Crate_Large2" parent="Decoration" instance=ExtResource("83_w5ibr")]
+transform = Transform3D(0.0176793, 0, -0.999844, 0, 1, 0, 0.999844, 0, 0.0176793, -9.54488, 0, 8.13751)
+
+[node name="Prop_Barrel2_Closed2" parent="Decoration" instance=ExtResource("84_iyokc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.983, 1.51699, 7.18415)
+
+[node name="Prop_Crate_Tarp2" parent="Decoration" instance=ExtResource("85_xb4kr")]
+transform = Transform3D(0.916488, 0.400061, 0, -0.400061, 0.916488, 0, 0, 0, 1, -8.35499, 1.27468, 9.18806)
+
+[node name="Prop_Crate2" parent="Decoration" instance=ExtResource("86_oxafg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.81814, 1.64874, 8.92725)
+
+[node name="Prop_Ammo_Closed2" parent="Decoration" instance=ExtResource("87_oxafg")]
+transform = Transform3D(-0.24138, 0, 0.970431, 0, 1, 0, -0.970431, 0, -0.24138, -9.77266, 0.480908, 2.82007)
+
+[node name="Prop_Ammo_Closed3" parent="Decoration" instance=ExtResource("87_oxafg")]
+transform = Transform3D(0.0425034, 0, 0.999096, 0, 1, 0, -0.999096, 0, 0.0425034, -9.05841, 0.480908, 2.83997)
+
+[node name="Prop_Ammo_Closed5" parent="Decoration" instance=ExtResource("87_oxafg")]
+transform = Transform3D(-0.0425035, 0, -0.999096, 0, 1, 0, 0.999096, 0, -0.0425035, -9.05841, 1.05556, 5.81638)
+
+[node name="Prop_Ammo_Closed4" parent="Decoration" instance=ExtResource("87_oxafg")]
+transform = Transform3D(0.0425034, 0, 0.999096, 0, 1, 0, -0.999096, 0, 0.0425034, -8.34961, 0.480908, 2.84412)
+
+[node name="Gun_Rifle2" parent="Decoration" instance=ExtResource("88_3qdwh")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -8.83662, 1.2564, 2.99022)
+
+[node name="Gun_SMG_Ammo2" parent="Decoration" instance=ExtResource("89_g453v")]
+transform = Transform3D(0.729816, -0.683643, -2.9883e-08, 0, -4.37114e-08, 1, -0.683643, -0.729816, -3.19013e-08, -8.44975, 1.23441, 2.80329)
+
+[node name="Gun_SMG_Ammo3" parent="Decoration" instance=ExtResource("89_g453v")]
+transform = Transform3D(0.621556, -0.783279, -0.0119645, 0.00270344, -0.0131283, 0.99991, -0.783365, -0.621532, -0.00604242, -8.44429, 1.27299, 2.80605)
+
+[node name="Prop_Barrel2_Closed3" parent="Decoration" instance=ExtResource("84_iyokc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.294, 1.11983, 2.72809)
+
+[node name="Prop_Barrel12" parent="Decoration" instance=ExtResource("90_3qdwh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.361, 0, 2.78894)
+
+[node name="Prop_Light_Small4" parent="Decoration" instance=ExtResource("67_rvbme")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.856, 2.00828)
+
+[node name="Prop_Light_Small5" parent="Decoration" instance=ExtResource("67_rvbme")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 3.856, 2.00828)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Decoration"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6406, 2.03665, 10.0145)
+mesh = SubResource("CylinderMesh_u1y5f")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Decoration/MeshInstance3D"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, -0.32587, 0.146481, 0.0825605)
+mesh = SubResource("BoxMesh_atybi")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Decoration/MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.75522, 0.579969, 0.129771)
+mesh = SubResource("BoxMesh_ahpfk")
+
+[node name="Doors" type="Node3D" parent="."]
+
+[node name="GeneratorDoor" parent="Doors" instance=ExtResource("21_cavhp")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 6.5)
+
+[node name="StorageDoor" parent="Doors" instance=ExtResource("21_cavhp")]
+transform = Transform3D(-2.18557e-08, 0, -0.5, 0, 0.5, 0, 0.5, 0, -2.18557e-08, -6.5, 0, 4)
+Locked = true
+
+[node name="LifeSupportDoor" parent="Doors" instance=ExtResource("21_cavhp")]
+transform = Transform3D(-2.18557e-08, 0, -0.5, 0, 0.5, 0, 0.5, 0, -2.18557e-08, 6.5, 0, 4)
+Locked = true
+
+[node name="BigDoors" type="Node3D" parent="Doors"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+
+[node name="DoorBigL" type="MeshInstance3D" parent="Doors/BigDoors"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+mesh = ExtResource("7_bi7sv")
+skeleton = NodePath("../../..")
+
+[node name="DoorBigR" type="MeshInstance3D" parent="Doors/BigDoors"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+mesh = ExtResource("8_jk42q")
+skeleton = NodePath("../../..")
+
+[node name="BigDoorsAnimationPlayer" type="AnimationPlayer" parent="Doors/BigDoors"]
+libraries = {
+&"": SubResource("AnimationLibrary_c2xmw")
+}
+autoplay = "Opened"
+
+[node name="BigDoorInteractable" parent="Doors/BigDoors" instance=ExtResource("38_rgg8d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.92521, 0)
+Interaction = 3
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Doors/BigDoors/BigDoorInteractable"]
+shape = SubResource("BoxShape3D_0ks6q")
+
+[node name="OpenAudio" type="AudioStreamPlayer3D" parent="Doors/BigDoors"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+
+[node name="LockedAudio" type="AudioStreamPlayer3D" parent="Doors/BigDoors"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+stream = ExtResource("46_1d4wk")
+
+[node name="Node3D" type="Node3D" parent="Doors"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10.5)
+
+[node name="DoorSmallTop" type="MeshInstance3D" parent="Doors/Node3D"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+mesh = ExtResource("46_2cvwo")
+
+[node name="DoorSmallBottom" type="MeshInstance3D" parent="Doors/Node3D"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+mesh = ExtResource("47_1d4wk")
+skeleton = NodePath("../..")
+
+[node name="Light" type="Node3D" parent="."]
+
+[node name="OmniLight3D5" type="OmniLight3D" parent="Light" groups=["WhiteLight"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.32, 3.268, -3.00381)
+
+[node name="OmniLight3D6" type="OmniLight3D" parent="Light" groups=["WhiteLight"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.224, 3.268, -3.073)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Light"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 6.47829, 0)
+light_energy = 0.0
+light_angular_distance = 42.58
+
+[node name="OmniLight3D" type="SpotLight3D" parent="Light" groups=["WhiteLight"]]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 3.73, 2.025)
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="Light" groups=["WhiteLight"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.28823, -9.14908)
+
+[node name="MapNodes" type="Node3D" parent="."]
+
+[node name="Center" parent="MapNodes" instance=ExtResource("11_a1gik")]
+BlockedCardinals = 1
+
+[node name="BackupEntrance" parent="MapNodes" instance=ExtResource("11_a1gik")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+BlockedCardinals = 26
+
+[node name="BackupGenerator" parent="MapNodes" instance=ExtResource("11_a1gik")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 9)
+BlockedCardinals = 10
+
+[node name="WestCorner" parent="MapNodes" instance=ExtResource("11_a1gik")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
+
+[node name="WestTJunction" parent="MapNodes" instance=ExtResource("11_a1gik")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 4)
+BlockedCardinals = 2
+
+[node name="WestRoom" parent="MapNodes" instance=ExtResource("11_a1gik")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, 4)
+BlockedCardinals = 4
+
+[node name="WestRoomEnd" parent="MapNodes" instance=ExtResource("11_a1gik")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, 8)
+BlockedCardinals = 4
+
+[node name="WestDeadEnd" parent="MapNodes" instance=ExtResource("11_a1gik")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 8)
+BlockedCardinals = 26
+
+[node name="EastCorner" parent="MapNodes" instance=ExtResource("11_a1gik")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+
+[node name="EastTJunction" parent="MapNodes" instance=ExtResource("11_a1gik")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 4)
+BlockedCardinals = 24
+
+[node name="EastDeadEnd" parent="MapNodes" instance=ExtResource("11_a1gik")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 8)
+BlockedCardinals = 10
+
+[node name="EastRoom" parent="MapNodes" instance=ExtResource("11_a1gik")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 4)
+
+[node name="EastRoomEnd" parent="MapNodes" instance=ExtResource("11_a1gik")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 8)
+BlockedCardinals = 24
+
+[node name="Interactables" type="Node3D" parent="."]
+
+[node name="BackupGenerator" parent="Interactables" instance=ExtResource("24_k3aso")]
+transform = Transform3D(-0.1, 0, 1.50996e-08, 0, 0.1, 0, -1.50996e-08, 0, -0.1, 0, 2, 10.5999)
+script = ExtResource("26_5l12v")
+
+[node name="BackgroundBlock" type="MeshInstance3D" parent="Interactables/BackupGenerator"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.79859e-07, 0, -1.85342)
+mesh = SubResource("BoxMesh_ap5pb")
+metadata/_edit_lock_ = true
+
+[node name="Background" type="Sprite3D" parent="Interactables/BackupGenerator"]
+transform = Transform3D(1, 0, 6.3573e-08, 0, 1, 0, -6.3573e-08, 0, 1, 0, 0, 0)
+alpha_cut = 2
+texture = ExtResource("17_x2ay6")
+
+[node name="Crystal Holder" type="Sprite3D" parent="Interactables/BackupGenerator"]
+transform = Transform3D(1, 0, 6.3573e-08, 0, 1, 0, -6.3573e-08, 0, 1, 6.34827e-10, 0, 0.0100098)
+alpha_cut = 2
+texture = ExtResource("18_k3aso")
+
+[node name="Crystal" type="Sprite3D" parent="Interactables/BackupGenerator"]
+transform = Transform3D(1, 0, 6.3573e-08, 0, 1, 0, -6.3573e-08, 0, 1, -7.81635, -0.104382, 0.0200119)
+sorting_offset = 1.0
+alpha_cut = 2
+render_priority = -5
+texture = ExtResource("22_uxcut")
+
+[node name="Center Energy" type="Sprite3D" parent="Interactables/BackupGenerator"]
+transform = Transform3D(1, 0, 6.3573e-08, 0, 1, 0, -6.3573e-08, 0, 1, 6.34827e-10, 0, 0.0100174)
+alpha_cut = 2
+texture = SubResource("ViewportTexture_xka4a")
+
+[node name="SubViewport" type="SubViewport" parent="Interactables/BackupGenerator/Center Energy"]
+size = Vector2i(600, 600)
+
+[node name="TextureRect" type="TextureRect" parent="Interactables/BackupGenerator/Center Energy/SubViewport"]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("17_x2ay6")
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="Interactables/BackupGenerator/Center Energy/SubViewport"]
+offset_right = 40.0
+offset_bottom = 40.0
+step = 0.1
+fill_mode = 4
+texture_under = ExtResource("29_q0a2u")
+texture_over = ExtResource("30_ivljt")
+texture_progress = ExtResource("30_h4mer")
+
+[node name="Charger Background" type="Sprite3D" parent="Interactables/BackupGenerator"]
+transform = Transform3D(1, 0, 6.3573e-08, 0, 1, 0, -6.3573e-08, 0, 1, 0, 0, 0.02)
+alpha_cut = 2
+texture = ExtResource("33_i38ee")
+
+[node name="Interactable3D" parent="Interactables/BackupGenerator/Charger Background" instance=ExtResource("38_rgg8d")]
+visible = false
+Interaction = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Interactables/BackupGenerator/Charger Background/Interactable3D"]
+shape = SubResource("BoxShape3D_3d4de")
+
+[node name="Charger Button" type="Sprite3D" parent="Interactables/BackupGenerator"]
+transform = Transform3D(1, 0, 6.3573e-08, 0, 1, 0, -6.3573e-08, 0, 1, 0, 0, 0.03)
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("34_4862x")
+
+[node name="Charger Button Pressed" type="Sprite3D" parent="Interactables/BackupGenerator"]
+transform = Transform3D(1, 0, 6.3573e-08, 0, 1, 0, -6.3573e-08, 0, 1, 0, 0, 0.03)
+visible = false
+alpha_cut = 2
+texture = ExtResource("35_hpda1")
+
+[node name="Charger Left Shielding" type="Sprite3D" parent="Interactables/BackupGenerator"]
+transform = Transform3D(1, 0, 6.3573e-08, 0, 1, 0, -6.3573e-08, 0, 1, 0, 0, 0.04)
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("36_qcevt")
+
+[node name="Charger Right Shielding" type="Sprite3D" parent="Interactables/BackupGenerator"]
+transform = Transform3D(1, 0, 6.3573e-08, 0, 1, 0, -6.3573e-08, 0, 1, 0, 0, 0.04)
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("37_06ns0")
+
+[node name="Charger Rotator" type="Sprite3D" parent="Interactables/BackupGenerator"]
+transform = Transform3D(1, 0, 6.3573e-08, 0, 1, 0, -6.3573e-08, 0, 1, 0, 0, 0.025)
+alpha_cut = 2
+texture = ExtResource("38_4862x")
+
+[node name="Charger Foreground" type="Sprite3D" parent="Interactables/BackupGenerator"]
+transform = Transform3D(1, 0, 6.3573e-08, 0, 1, 0, -6.3573e-08, 0, 1, 0, 0, 0.05)
+alpha_cut = 2
+texture = ExtResource("38_tiens")
+
+[node name="Fan Background" type="Sprite3D" parent="Interactables/BackupGenerator"]
+transform = Transform3D(1, 0, 6.3573e-08, 0, 1, 0, -6.3573e-08, 0, 1, 6.34827e-10, 0, 0.0100098)
+alpha_cut = 2
+texture = ExtResource("19_803qd")
+
+[node name="FanPropellerPivot" type="Node3D" parent="Interactables/BackupGenerator"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.69769, 3.44402, 0.0200195)
+
+[node name="Fan Propeller" type="Sprite3D" parent="Interactables/BackupGenerator/FanPropellerPivot"]
+transform = Transform3D(1, 0, 6.3573e-08, 0, 1, 0, -6.3573e-08, 0, 1, 0.00265026, -0.00996971, 0)
+alpha_cut = 2
+texture = ExtResource("20_ba3al")
+
+[node name="Fan Grid" type="Sprite3D" parent="Interactables/BackupGenerator"]
+transform = Transform3D(1, 0, 6.3573e-08, 0, 1, 0, -6.3573e-08, 0, 1, 1.9063e-09, 0, 0.0300064)
+alpha_cut = 2
+texture = ExtResource("21_v5qxt")
+
+[node name="Main Power Holder" type="Sprite3D" parent="Interactables/BackupGenerator"]
+transform = Transform3D(1, 0, 6.3573e-08, 0, 1, 0, -6.3573e-08, 0, 1, 0, 0, 0.01)
+alpha_cut = 2
+texture = ExtResource("34_ivljt")
+
+[node name="Main Power Switch OFF" type="Sprite3D" parent="Interactables/BackupGenerator"]
+transform = Transform3D(1, 0, 6.3573e-08, 0, 1, 0, -6.3573e-08, 0, 1, -4.92092, 1.15482, 0.0200119)
+sorting_offset = 0.5
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("35_007ws")
+
+[node name="Main Power Switch OFF" parent="Interactables/BackupGenerator/Main Power Switch OFF" instance=ExtResource("38_rgg8d")]
+transform = Transform3D(1, 0, -6.3573e-08, 0, 1, 0, 6.3573e-08, 0, 1, -0.0712309, 1.3142, -0.0200119)
+Interaction = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Interactables/BackupGenerator/Main Power Switch OFF/Main Power Switch OFF"]
+transform = Transform3D(1, 0, -4.26326e-14, 0, 1, 0, 4.26326e-14, 0, 1, 0, 0, 0)
+shape = SubResource("BoxShape3D_57jb0")
+
+[node name="Main Power Switch ON" type="Sprite3D" parent="Interactables/BackupGenerator"]
+transform = Transform3D(1, 0, 6.3573e-08, 0, 1, 0, -6.3573e-08, 0, 1, -4.92092, -1.16122, 0.0200119)
+visible = false
+sorting_offset = 1.0
+flip_v = true
+alpha_cut = 2
+texture = ExtResource("35_007ws")
+
+[node name="Main Power Switch ON" parent="Interactables/BackupGenerator/Main Power Switch ON" instance=ExtResource("38_rgg8d")]
+transform = Transform3D(1, 0, -6.3573e-08, 0, 1, 0, 6.3573e-08, 0, 1, -0.0712309, -1.26099, -0.0200119)
+Interaction = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Interactables/BackupGenerator/Main Power Switch ON/Main Power Switch ON"]
+transform = Transform3D(1, 0, -4.26326e-14, 0, 1, 0, 4.26326e-14, 0, 1, 0, 0, 0)
+shape = SubResource("BoxShape3D_57jb0")
+
+[node name="Switches Holder" type="Sprite3D" parent="Interactables/BackupGenerator"]
+transform = Transform3D(1, 0, 6.3573e-08, 0, 1, 0, -6.3573e-08, 0, 1, 6.13222, -1.2545, 0.0100174)
+alpha_cut = 2
+texture = ExtResource("36_5l12v")
+
+[node name="EnergySwitch" parent="Interactables/BackupGenerator/Switches Holder" instance=ExtResource("47_tiens")]
+transform = Transform3D(1, 0, -6.3573e-08, 0, 1, 0, 6.3573e-08, 0, 1, -1.59, 0.95, 0)
+
+[node name="Switch Icon" parent="Interactables/BackupGenerator/Switches Holder/EnergySwitch" index="3"]
+texture = ExtResource("53_cavhp")
+
+[node name="LifeSupportSwitch" parent="Interactables/BackupGenerator/Switches Holder" instance=ExtResource("47_tiens")]
+transform = Transform3D(1, 0, -6.3573e-08, 0, 1, 0, 6.3573e-08, 0, 1, 0.109639, 0.95, 0)
+
+[node name="Switch Icon" parent="Interactables/BackupGenerator/Switches Holder/LifeSupportSwitch" index="3"]
+texture = ExtResource("49_retsv")
+
+[node name="CoolingSwitch" parent="Interactables/BackupGenerator/Switches Holder" instance=ExtResource("47_tiens")]
+transform = Transform3D(1, 0, -6.3573e-08, 0, 1, 0, 6.3573e-08, 0, 1, 1.80964, 0.95, 0)
+
+[node name="Switch Icon" parent="Interactables/BackupGenerator/Switches Holder/CoolingSwitch" index="3"]
+texture = ExtResource("50_3d4de")
+
+[node name="DecorativeSwitch1" parent="Interactables/BackupGenerator/Switches Holder" instance=ExtResource("47_tiens")]
+transform = Transform3D(1, 0, -6.3573e-08, 0, 1, 0, 6.3573e-08, 0, 1, -1.59036, -1.37472, 0)
+
+[node name="Switch Icon" parent="Interactables/BackupGenerator/Switches Holder/DecorativeSwitch1" index="3"]
+texture = ExtResource("50_c1adh")
+
+[node name="DecorativeSwitch2" parent="Interactables/BackupGenerator/Switches Holder" instance=ExtResource("47_tiens")]
+transform = Transform3D(1, 0, -6.3573e-08, 0, 1, 0, 6.3573e-08, 0, 1, 0.109639, -1.37472, 0)
+
+[node name="Switch Icon" parent="Interactables/BackupGenerator/Switches Holder/DecorativeSwitch2" index="3"]
+texture = ExtResource("51_wr6c8")
+
+[node name="DecorativeSwitch3" parent="Interactables/BackupGenerator/Switches Holder" instance=ExtResource("47_tiens")]
+transform = Transform3D(1, 0, -6.3573e-08, 0, 1, 0, 6.3573e-08, 0, 1, 1.80964, -1.37472, 0)
+
+[node name="Switch Icon" parent="Interactables/BackupGenerator/Switches Holder/DecorativeSwitch3" index="3"]
+texture = ExtResource("52_u4xmi")
+
+[node name="InputGauge" parent="Interactables/BackupGenerator" instance=ExtResource("39_5l12v")]
+transform = Transform3D(1, 0, 6.3573e-08, 0, 1, 0, -6.3573e-08, 0, 1, -1.33224, 4.1084, 0.0200119)
+Value = 0.0
+
+[node name="Icon" parent="Interactables/BackupGenerator/InputGauge" index="4"]
+texture = ExtResource("40_xka4a")
+
+[node name="DistributionGauge" parent="Interactables/BackupGenerator" instance=ExtResource("39_5l12v")]
+transform = Transform3D(1, 0, 6.3573e-08, 0, 1, 0, -6.3573e-08, 0, 1, 1.43988, 4.10841, 0.0200119)
+
+[node name="Distribution Danger" parent="Interactables/BackupGenerator/DistributionGauge" index="1"]
+visible = true
+
+[node name="Icon" parent="Interactables/BackupGenerator/DistributionGauge" index="4"]
+texture = ExtResource("41_v2ovy")
+
+[node name="TemperatureGauge" parent="Interactables/BackupGenerator" instance=ExtResource("39_5l12v")]
+transform = Transform3D(1, 0, 6.3573e-08, 0, 1, 0, -6.3573e-08, 0, 1, 4.05705, 4.1084, 0.0200119)
+Value = 0.0
+TweenTransitionType = 0
+
+[node name="Temperature Danger" parent="Interactables/BackupGenerator/TemperatureGauge" index="2"]
+visible = true
+
+[node name="Icon" parent="Interactables/BackupGenerator/TemperatureGauge" index="4"]
+texture = ExtResource("42_rgg8d")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Interactables/BackupGenerator"]
+libraries = {
+&"": SubResource("AnimationLibrary_jsm2e")
+}
+
+[node name="Timers" type="Node" parent="Interactables/BackupGenerator"]
+
+[node name="MainSwitchDelay" type="Timer" parent="Interactables/BackupGenerator/Timers"]
+wait_time = 2.0
+one_shot = true
+
+[node name="Audio" type="Node3D" parent="Interactables/BackupGenerator"]
+
+[node name="MainPowerSwitch" type="AudioStreamPlayer3D" parent="Interactables/BackupGenerator/Audio"]
+transform = Transform3D(5, 0, -1.13687e-13, 0, 5, 0, 1.13687e-13, 0, 5, 0, 0, 0)
+stream = ExtResource("46_retsv")
+
+[node name="PowerOn" type="AudioStreamPlayer3D" parent="Interactables/BackupGenerator/Audio"]
+transform = Transform3D(5, 0, -1.13687e-13, 0, 5, 0, 1.13687e-13, 0, 5, 0, 0, 0)
+stream = ExtResource("61_wr6c8")
+volume_db = -20.0
+
+[node name="Charge" type="AudioStreamPlayer3D" parent="Interactables/BackupGenerator/Audio"]
+transform = Transform3D(5, 0, -1.13687e-13, 0, 5, 0, 1.13687e-13, 0, 5, 0, 0, 0)
+volume_db = -22.0
+
+[node name="GeneratorHum" type="AudioStreamPlayer3D" parent="Interactables/BackupGenerator/Audio"]
+transform = Transform3D(5, 0, -1.13687e-13, 0, 5, 0, 1.13687e-13, 0, 5, 0, 0, 0)
+stream = ExtResource("58_ap5pb")
+volume_db = -20.0
+
+[node name="GeneratorOff" type="AudioStreamPlayer3D" parent="Interactables/BackupGenerator/Audio"]
+transform = Transform3D(5, 0, -1.7053e-13, 0, 5, 0, 1.7053e-13, 0, 5, 0, 0, 0)
+volume_db = 10.0
+
+[node name="Sliding" type="AudioStreamPlayer3D" parent="Interactables/BackupGenerator/Audio"]
+transform = Transform3D(5, 0, -1.13687e-13, 0, 5, 0, 1.13687e-13, 0, 5, 0, 0, 0)
+
+[node name="ShipStatusScreens" type="Node3D" parent="Interactables"]
+
+[node name="GeneratorScreen" parent="Interactables/ShipStatusScreens" instance=ExtResource("63_u4xmi")]
+transform = Transform3D(-4.37114e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, -4.37114e-09, -1.9, 2, 9)
+
+[node name="GeneratorScreen2" parent="Interactables/ShipStatusScreens" instance=ExtResource("63_u4xmi")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -4, 2, -1.9)
+
+[node name="Chest" parent="Interactables" instance=ExtResource("88_g453v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0.995, 5.677)
+
+[node name="AnimationPlayer" parent="Interactables/Chest/Prop_Chest2" index="1"]
+autoplay = "Chest_Idle_Closed"
+
+[node name="Contained" parent="Interactables/Chest" index="2"]
+visible = true
+
+[node name="LifeSupportFilter" type="Node3D" parent="Interactables/Chest/Contained" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.408705, 0)
+script = ExtResource("87_u1y5f")
+
+[node name="FullPod" type="Sprite3D" parent="Interactables/Chest/Contained/LifeSupportFilter"]
+transform = Transform3D(-0.0588602, 0.0314505, -0.0744738, 0.0195014, 0.0949255, 0.0246745, 0.0784549, 5.96046e-09, -0.0620066, 0, 0.022964, -0.00356483)
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("87_id1vu")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Interactables/Chest/Contained/LifeSupportFilter/FullPod"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, -0.392871)
+mesh = SubResource("CylinderMesh_atybi")
+
+[node name="FilterInteractable" parent="Interactables/Chest/Contained/LifeSupportFilter" instance=ExtResource("38_rgg8d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0222406, 0.0230292, 0)
+Interaction = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Interactables/Chest/Contained/LifeSupportFilter/FilterInteractable"]
+shape = SubResource("BoxShape3D_qdr3s")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Interactables/Chest/Contained/LifeSupportFilter"]
+libraries = {
+&"": SubResource("AnimationLibrary_1d4wk")
+}
+autoplay = "RESET"
+
+[node name="BreathablePoster" parent="Interactables" instance=ExtResource("88_7fnhw")]
+transform = Transform3D(1.31134e-08, 0, 0.1, 0, 0.1, 0, -0.1, 0, 1.31134e-08, 7.103, 2, 8)
+
+[node name="WestDoorControl" type="Node3D" parent="Interactables" node_paths=PackedStringArray("door")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.65668, 0, 2.77125)
+script = ExtResource("88_qw7w5")
+door = NodePath("../../Doors/StorageDoor")
+
+[node name="PropDoorControl" type="MeshInstance3D" parent="Interactables/WestDoorControl"]
+transform = Transform3D(-2.18557e-08, 0, -0.5, 0, 0.5, 0, 0.5, 0, -2.18557e-08, 0, 0, 0)
+mesh = ExtResource("91_g453v")
+skeleton = NodePath("../../..")
+
+[node name="Interactable3D" parent="Interactables/WestDoorControl" instance=ExtResource("38_rgg8d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.18854, 0)
+Interaction = 3
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Interactables/WestDoorControl/Interactable3D"]
+shape = SubResource("BoxShape3D_g453v")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Interactables/WestDoorControl"]
+libraries = {
+&"": SubResource("AnimationLibrary_qdr3s")
+}
+autoplay = "RESET"
+
+[node name="Prop_KeyCard" parent="Interactables/WestDoorControl" instance=ExtResource("79_oukhj")]
+transform = Transform3D(-3.61999e-06, 0, 1, 0, 1, 0, -1, 0, -3.61999e-06, 0, 0.106202, 1.14484)
+visible = false
+
+[node name="DoorUnlockAudio" type="AudioStreamPlayer3D" parent="Interactables/WestDoorControl"]
+
+[node name="Keycard" type="Node3D" parent="Interactables"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.70116, 2.19077, 2.59432)
+script = ExtResource("89_7fnhw")
+
+[node name="Prop_KeyCard" parent="Interactables/Keycard" instance=ExtResource("79_oukhj")]
+
+[node name="Interactable3D" parent="Interactables/Keycard" instance=ExtResource("38_rgg8d")]
+Interaction = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Interactables/Keycard/Interactable3D"]
+shape = SubResource("BoxShape3D_7fnhw")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Interactables/Keycard"]
+libraries = {
+&"": SubResource("AnimationLibrary_ahpfk")
+}
+autoplay = "RESET"
+
+[node name="LifeSupport" parent="Interactables" instance=ExtResource("93_ahpfk")]
+transform = Transform3D(-0.1, 0, 1.50996e-08, 0, 0.1, 0, -1.50996e-08, 0, -0.1, 9.006, 2, 10.047)
+
+[node name="PipePuzzle" parent="Interactables" instance=ExtResource("90_g453v")]
+transform = Transform3D(-4.37114e-09, 0, -0.1, 0, 0.1, 0, 0.1, 0, -4.37114e-09, 10.905, 1.94936, 8)
+
+[node name="Player" parent="." instance=ExtResource("16_umfvy")]
+transform = Transform3D(1, 0, 1.42109e-14, 0, 1, 0, -1.42109e-14, 0, 1, 0, 0, 0)
+
+[node name="Camera3D" type="Camera3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+current = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Player"]
+libraries = {
+&"": SubResource("AnimationLibrary_ljknx")
+}
+
+[node name="ExplosionAudio" type="AudioStreamPlayer" parent="."]
+
+[connection signal="Clicked" from="Doors/BigDoors/BigDoorInteractable" to="." method="OnBigDoorInteractableClicked"]
+[connection signal="Clicked" from="Interactables/BackupGenerator/Charger Background/Interactable3D" to="Interactables/BackupGenerator" method="OnChargeClicked"]
+[connection signal="Clicked" from="Interactables/BackupGenerator/Main Power Switch OFF/Main Power Switch OFF" to="Interactables/BackupGenerator" method="OnMainPowerSwitchOffClicked"]
+[connection signal="Clicked" from="Interactables/BackupGenerator/Main Power Switch ON/Main Power Switch ON" to="Interactables/BackupGenerator" method="OnMainPowerSwitchOnClicked"]
+[connection signal="Toggled" from="Interactables/BackupGenerator/Switches Holder/EnergySwitch" to="Interactables/BackupGenerator" method="OnEnergySwitchToggled"]
+[connection signal="Toggled" from="Interactables/BackupGenerator/Switches Holder/LifeSupportSwitch" to="Interactables/BackupGenerator" method="OnLifeSupportSwitchToggled"]
+[connection signal="Toggled" from="Interactables/BackupGenerator/Switches Holder/CoolingSwitch" to="Interactables/BackupGenerator" method="OnCoolingSwitchToggled"]
+[connection signal="Toggled" from="Interactables/BackupGenerator/Switches Holder/DecorativeSwitch1" to="Interactables/BackupGenerator" method="OnDecorativeSwitch1Toggled"]
+[connection signal="Toggled" from="Interactables/BackupGenerator/Switches Holder/DecorativeSwitch2" to="Interactables/BackupGenerator" method="OnDecorativeSwitch2Toggled"]
+[connection signal="Toggled" from="Interactables/BackupGenerator/Switches Holder/DecorativeSwitch3" to="Interactables/BackupGenerator" method="OnDecorativeSwitch3Toggled"]
+[connection signal="SetValueFinished" from="Interactables/BackupGenerator/TemperatureGauge" to="Interactables/BackupGenerator" method="OnTemperatureGaugeSetValueFinished"]
+[connection signal="animation_finished" from="Interactables/BackupGenerator/AnimationPlayer" to="Interactables/BackupGenerator" method="OnAnimationFinished"]
+[connection signal="Clicked" from="Interactables/Chest/Contained/LifeSupportFilter/FilterInteractable" to="Interactables/Chest/Contained/LifeSupportFilter" method="OnFilterInteractableClicked"]
+[connection signal="Clicked" from="Interactables/WestDoorControl/Interactable3D" to="Interactables/WestDoorControl" method="OnClicked"]
+[connection signal="animation_finished" from="Interactables/WestDoorControl/AnimationPlayer" to="Interactables/WestDoorControl" method="OnAnimationPlayerAnimationFinished"]
+[connection signal="Clicked" from="Interactables/Keycard/Interactable3D" to="Interactables/Keycard" method="OnClicked"]
+[connection signal="Moved" from="Player" to="." method="OnPlayerMoved"]
+[connection signal="Turned" from="Player" to="." method="OnPlayerTurned"]
+
+[editable path="Decoration/Prop_Fan_Small2"]
+[editable path="Decoration/Prop_Fan_Small3"]
+[editable path="Decoration/Prop_Fan_Small4"]
+[editable path="Interactables/BackupGenerator"]
+[editable path="Interactables/BackupGenerator/Switches Holder/EnergySwitch"]
+[editable path="Interactables/BackupGenerator/Switches Holder/LifeSupportSwitch"]
+[editable path="Interactables/BackupGenerator/Switches Holder/CoolingSwitch"]
+[editable path="Interactables/BackupGenerator/Switches Holder/DecorativeSwitch1"]
+[editable path="Interactables/BackupGenerator/Switches Holder/DecorativeSwitch2"]
+[editable path="Interactables/BackupGenerator/Switches Holder/DecorativeSwitch3"]
+[editable path="Interactables/BackupGenerator/InputGauge"]
+[editable path="Interactables/BackupGenerator/DistributionGauge"]
+[editable path="Interactables/BackupGenerator/TemperatureGauge"]
+[editable path="Interactables/Chest"]
+[editable path="Interactables/Chest/Prop_Chest2"]
+[editable path="Player"]

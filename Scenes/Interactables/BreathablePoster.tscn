@@ -1,0 +1,231 @@
+[gd_scene load_steps=10 format=3 uid="uid://mwxvcykviwfq"]
+
+[ext_resource type="PackedScene" uid="uid://cdmeoq3c7s1ew" path="res://Scenes/Interactables/Inspectable.tscn" id="1_we7a4"]
+[ext_resource type="Texture2D" uid="uid://82j2pfxso8p1" path="res://Assets/2D/My Assets/Breathable/Background.png" id="2_j34wl"]
+[ext_resource type="Texture2D" uid="uid://bgqa2rw4sawgs" path="res://Assets/2D/My Assets/Breathable/Alien Icon.png" id="3_dcdjl"]
+[ext_resource type="Texture2D" uid="uid://dk0r2oyrr0u57" path="res://Assets/2D/My Assets/Breathable/Tentacle Icon.png" id="4_07vjd"]
+[ext_resource type="Texture2D" uid="uid://bd81ljhu537yg" path="res://Assets/2D/My Assets/Breathable/Blob Icon.png" id="5_hb0rl"]
+[ext_resource type="Texture2D" uid="uid://cxhbep4xv0sf4" path="res://Assets/2D/My Assets/Breathable/Human Icon.png" id="6_rnnkw"]
+[ext_resource type="Texture2D" uid="uid://j2dw6v3udtys" path="res://Assets/2D/My Assets/Breathable/Red Circle.png" id="7_j34wl"]
+[ext_resource type="Texture2D" uid="uid://cglr4jowh70fl" path="res://Assets/2D/My Assets/Breathable/Check.png" id="7_xx5v8"]
+[ext_resource type="Texture2D" uid="uid://sh3tqariyk8l" path="res://Assets/2D/My Assets/Breathable/X.png" id="8_4ilky"]
+
+[node name="BreathablePoster" type="Node3D"]
+
+[node name="Inspectable" parent="." instance=ExtResource("1_we7a4")]
+
+[node name="Background" type="Sprite3D" parent="."]
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("2_j34wl")
+
+[node name="Alien" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.54658, 1.44605, 0.01)
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("3_dcdjl")
+
+[node name="Tentacle" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.54658, -0.388895, 0.01)
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("4_07vjd")
+
+[node name="Blob" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.54658, -2.12018, 0.01)
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("5_hb0rl")
+
+[node name="Human" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.54658, -4.13347, 0.01)
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("6_rnnkw")
+
+[node name="Red Circle" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.54658, -4.13347, 0.01)
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("7_j34wl")
+
+[node name="Check" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.534, 1.518, 0.01)
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("7_xx5v8")
+
+[node name="Check3" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.12926, 1.518, 0.01)
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("7_xx5v8")
+
+[node name="Check12" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.94872, 1.518, 0.01)
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("7_xx5v8")
+
+[node name="Check14" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.21587, 1.518, 0.01)
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("7_xx5v8")
+
+[node name="Check13" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.29659, -0.270954, 0.01)
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("7_xx5v8")
+
+[node name="Check11" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.72435, -0.307591, 0.01)
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("7_xx5v8")
+
+[node name="Check15" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.740063, -0.307591, 0.01)
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("7_xx5v8")
+
+[node name="Check2" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.534, -2.05984, 0.01)
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("7_xx5v8")
+
+[node name="Check4" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.05768, -2.05984, 0.01)
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("7_xx5v8")
+
+[node name="Check6" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.66771, -2.05984, 0.01)
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("7_xx5v8")
+
+[node name="Check7" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.699387, -2.05984, 0.01)
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("7_xx5v8")
+
+[node name="Check8" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.01672, -2.05984, 0.01)
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("7_xx5v8")
+
+[node name="Check9" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.33697, -2.05984, 0.01)
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("7_xx5v8")
+
+[node name="Check10" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.84511, -2.05984, 0.01)
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("7_xx5v8")
+
+[node name="Check5" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.72886, -4.01911, 0.01)
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("7_xx5v8")
+
+[node name="X" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.50451, -0.348753, 0.01)
+sorting_offset = 2.0
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("8_4ilky")
+
+[node name="X4" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.10791, -0.348753, 0.01)
+sorting_offset = 2.0
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("8_4ilky")
+
+[node name="X12" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.06818, -0.348753, 0.01)
+sorting_offset = 2.0
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("8_4ilky")
+
+[node name="X9" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.71037, 1.4528, 0.01)
+sorting_offset = 2.0
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("8_4ilky")
+
+[node name="X13" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.705219, 1.4528, 0.01)
+sorting_offset = 2.0
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("8_4ilky")
+
+[node name="X10" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.07356, 1.4528, 0.01)
+sorting_offset = 2.0
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("8_4ilky")
+
+[node name="X11" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.07356, -0.368357, 0.01)
+sorting_offset = 2.0
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("8_4ilky")
+
+[node name="X2" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.50451, -4.15398, 0.01)
+sorting_offset = 2.0
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("8_4ilky")
+
+[node name="X3" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.06653, -4.15398, 0.01)
+sorting_offset = 2.0
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("8_4ilky")
+
+[node name="X5" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.73175, -4.15398, 0.01)
+sorting_offset = 2.0
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("8_4ilky")
+
+[node name="X6" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.09521, -4.15398, 0.01)
+sorting_offset = 2.0
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("8_4ilky")
+
+[node name="X7" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.27515, -4.15398, 0.01)
+sorting_offset = 2.0
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("8_4ilky")
+
+[node name="X8" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.99044, -4.15398, 0.01)
+sorting_offset = 2.0
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("8_4ilky")

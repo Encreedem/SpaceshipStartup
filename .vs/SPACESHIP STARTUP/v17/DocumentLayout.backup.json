@@ -1,0 +1,343 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Projects\\GoDot\\My Projects\\SpaceshipStartup\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E8A1645D-3240-43E7-8897-85FADBCFD046}|Spaceship Startup.csproj|e:\\projects\\godot\\my projects\\spaceshipstartup\\scenes\\levels\\level.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8A1645D-3240-43E7-8897-85FADBCFD046}|Spaceship Startup.csproj|solutionrelative:scenes\\levels\\level.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8A1645D-3240-43E7-8897-85FADBCFD046}|Spaceship Startup.csproj|e:\\projects\\godot\\my projects\\spaceshipstartup\\scenes\\interactables\\lifesupport\\lifesupport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8A1645D-3240-43E7-8897-85FADBCFD046}|Spaceship Startup.csproj|solutionrelative:scenes\\interactables\\lifesupport\\lifesupport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8A1645D-3240-43E7-8897-85FADBCFD046}|Spaceship Startup.csproj|e:\\projects\\godot\\my projects\\spaceshipstartup\\scenes\\ui\\mousecontrols.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8A1645D-3240-43E7-8897-85FADBCFD046}|Spaceship Startup.csproj|solutionrelative:scenes\\ui\\mousecontrols.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8A1645D-3240-43E7-8897-85FADBCFD046}|Spaceship Startup.csproj|e:\\projects\\godot\\my projects\\spaceshipstartup\\scenes\\characters\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8A1645D-3240-43E7-8897-85FADBCFD046}|Spaceship Startup.csproj|solutionrelative:scenes\\characters\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Projects\\GoDot\\My Projects\\SpaceshipStartup\\Scenes\\Interactables\\BigDoors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Scenes\\Interactables\\BigDoors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8A1645D-3240-43E7-8897-85FADBCFD046}|Spaceship Startup.csproj|e:\\projects\\godot\\my projects\\spaceshipstartup\\scenes\\interactables\\shipstatusscreen\\shipstatusscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8A1645D-3240-43E7-8897-85FADBCFD046}|Spaceship Startup.csproj|solutionrelative:scenes\\interactables\\shipstatusscreen\\shipstatusscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8A1645D-3240-43E7-8897-85FADBCFD046}|Spaceship Startup.csproj|e:\\projects\\godot\\my projects\\spaceshipstartup\\scenes\\interactables\\backupgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8A1645D-3240-43E7-8897-85FADBCFD046}|Spaceship Startup.csproj|solutionrelative:scenes\\interactables\\backupgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8A1645D-3240-43E7-8897-85FADBCFD046}|Spaceship Startup.csproj|e:\\projects\\godot\\my projects\\spaceshipstartup\\scenes\\interactables\\lampalarm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8A1645D-3240-43E7-8897-85FADBCFD046}|Spaceship Startup.csproj|solutionrelative:scenes\\interactables\\lampalarm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8A1645D-3240-43E7-8897-85FADBCFD046}|Spaceship Startup.csproj|e:\\projects\\godot\\my projects\\spaceshipstartup\\scenes\\interactables\\pipepuzzle\\pipepuzzle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8A1645D-3240-43E7-8897-85FADBCFD046}|Spaceship Startup.csproj|solutionrelative:scenes\\interactables\\pipepuzzle\\pipepuzzle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8A1645D-3240-43E7-8897-85FADBCFD046}|Spaceship Startup.csproj|e:\\projects\\godot\\my projects\\spaceshipstartup\\scenes\\interactables\\pipepuzzle\\pipetile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8A1645D-3240-43E7-8897-85FADBCFD046}|Spaceship Startup.csproj|solutionrelative:scenes\\interactables\\pipepuzzle\\pipetile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8A1645D-3240-43E7-8897-85FADBCFD046}|Spaceship Startup.csproj|e:\\projects\\godot\\my projects\\spaceshipstartup\\scenes\\interactables\\switch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8A1645D-3240-43E7-8897-85FADBCFD046}|Spaceship Startup.csproj|solutionrelative:scenes\\interactables\\switch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8A1645D-3240-43E7-8897-85FADBCFD046}|Spaceship Startup.csproj|e:\\projects\\godot\\my projects\\spaceshipstartup\\globals\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8A1645D-3240-43E7-8897-85FADBCFD046}|Spaceship Startup.csproj|solutionrelative:globals\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8A1645D-3240-43E7-8897-85FADBCFD046}|Spaceship Startup.csproj|e:\\projects\\godot\\my projects\\spaceshipstartup\\scenes\\interactables\\door.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8A1645D-3240-43E7-8897-85FADBCFD046}|Spaceship Startup.csproj|solutionrelative:scenes\\interactables\\door.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Projects\\GoDot\\My Projects\\SpaceshipStartup\\Scenes\\Levels\\WestDoorControl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Scenes\\Levels\\WestDoorControl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8A1645D-3240-43E7-8897-85FADBCFD046}|Spaceship Startup.csproj|e:\\projects\\godot\\my projects\\spaceshipstartup\\globals\\globals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8A1645D-3240-43E7-8897-85FADBCFD046}|Spaceship Startup.csproj|solutionrelative:globals\\globals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Projects\\GoDot\\My Projects\\SpaceshipStartup\\Scenes\\Interactables\\Keycard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Scenes\\Interactables\\Keycard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8A1645D-3240-43E7-8897-85FADBCFD046}|Spaceship Startup.csproj|e:\\projects\\godot\\my projects\\spaceshipstartup\\scenes\\interactables\\interactable3d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8A1645D-3240-43E7-8897-85FADBCFD046}|Spaceship Startup.csproj|solutionrelative:scenes\\interactables\\interactable3d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8A1645D-3240-43E7-8897-85FADBCFD046}|Spaceship Startup.csproj|e:\\projects\\godot\\my projects\\spaceshipstartup\\scenes\\levels\\mapnode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8A1645D-3240-43E7-8897-85FADBCFD046}|Spaceship Startup.csproj|solutionrelative:scenes\\levels\\mapnode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8A1645D-3240-43E7-8897-85FADBCFD046}|Spaceship Startup.csproj|e:\\projects\\godot\\my projects\\spaceshipstartup\\scenes\\interactables\\chest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8A1645D-3240-43E7-8897-85FADBCFD046}|Spaceship Startup.csproj|solutionrelative:scenes\\interactables\\chest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Level.cs",
+              "DocumentMoniker": "E:\\PROJECTS\\GODOT\\MY PROJECTS\\SPACESHIPSTARTUP\\Scenes\\Levels\\Level.cs",
+              "RelativeDocumentMoniker": "Scenes\\Levels\\Level.cs",
+              "ToolTip": "E:\\PROJECTS\\GODOT\\MY PROJECTS\\SPACESHIPSTARTUP\\Scenes\\Levels\\Level.cs",
+              "RelativeToolTip": "Scenes\\Levels\\Level.cs",
+              "ViewState": "AgIAAKIAAAAAAAAAAAApwL8AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T02:43:04.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Player.cs",
+              "DocumentMoniker": "E:\\PROJECTS\\GODOT\\MY PROJECTS\\SPACESHIPSTARTUP\\Scenes\\Characters\\Player.cs",
+              "RelativeDocumentMoniker": "Scenes\\Characters\\Player.cs",
+              "ToolTip": "E:\\PROJECTS\\GODOT\\MY PROJECTS\\SPACESHIPSTARTUP\\Scenes\\Characters\\Player.cs",
+              "RelativeToolTip": "Scenes\\Characters\\Player.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA1wBcAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T19:01:47.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MouseControls.cs",
+              "DocumentMoniker": "E:\\Projects\\GoDot\\My Projects\\SpaceshipStartup\\Scenes\\UI\\MouseControls.cs",
+              "RelativeDocumentMoniker": "Scenes\\UI\\MouseControls.cs",
+              "ToolTip": "E:\\Projects\\GoDot\\My Projects\\SpaceshipStartup\\Scenes\\UI\\MouseControls.cs",
+              "RelativeToolTip": "Scenes\\UI\\MouseControls.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAwwGwAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T18:59:32.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BigDoors.cs",
+              "DocumentMoniker": "E:\\Projects\\GoDot\\My Projects\\SpaceshipStartup\\Scenes\\Interactables\\BigDoors.cs",
+              "RelativeDocumentMoniker": "Scenes\\Interactables\\BigDoors.cs",
+              "ToolTip": "E:\\Projects\\GoDot\\My Projects\\SpaceshipStartup\\Scenes\\Interactables\\BigDoors.cs",
+              "RelativeToolTip": "Scenes\\Interactables\\BigDoors.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T18:34:10.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ShipStatusScreen.cs",
+              "DocumentMoniker": "E:\\Projects\\GoDot\\My Projects\\SpaceshipStartup\\Scenes\\Interactables\\ShipStatusScreen\\ShipStatusScreen.cs",
+              "RelativeDocumentMoniker": "Scenes\\Interactables\\ShipStatusScreen\\ShipStatusScreen.cs",
+              "ToolTip": "E:\\Projects\\GoDot\\My Projects\\SpaceshipStartup\\Scenes\\Interactables\\ShipStatusScreen\\ShipStatusScreen.cs",
+              "RelativeToolTip": "Scenes\\Interactables\\ShipStatusScreen\\ShipStatusScreen.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwCkAAABvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T18:20:49.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BackupGenerator.cs",
+              "DocumentMoniker": "E:\\PROJECTS\\GODOT\\MY PROJECTS\\SPACESHIPSTARTUP\\Scenes\\Interactables\\BackupGenerator.cs",
+              "RelativeDocumentMoniker": "Scenes\\Interactables\\BackupGenerator.cs",
+              "ToolTip": "E:\\PROJECTS\\GODOT\\MY PROJECTS\\SPACESHIPSTARTUP\\Scenes\\Interactables\\BackupGenerator.cs",
+              "RelativeToolTip": "Scenes\\Interactables\\BackupGenerator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T17:22:24.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LifeSupport.cs",
+              "DocumentMoniker": "E:\\Projects\\GoDot\\My Projects\\SpaceshipStartup\\Scenes\\Interactables\\LifeSupport\\LifeSupport.cs",
+              "RelativeDocumentMoniker": "Scenes\\Interactables\\LifeSupport\\LifeSupport.cs",
+              "ToolTip": "E:\\Projects\\GoDot\\My Projects\\SpaceshipStartup\\Scenes\\Interactables\\LifeSupport\\LifeSupport.cs",
+              "RelativeToolTip": "Scenes\\Interactables\\LifeSupport\\LifeSupport.cs",
+              "ViewState": "AgIAACgBAAAAAAAAAAAhwFEBAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T09:47:20.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PipePuzzle.cs",
+              "DocumentMoniker": "E:\\Projects\\GoDot\\My Projects\\SpaceshipStartup\\Scenes\\Interactables\\PipePuzzle\\PipePuzzle.cs",
+              "RelativeDocumentMoniker": "Scenes\\Interactables\\PipePuzzle\\PipePuzzle.cs",
+              "ToolTip": "E:\\Projects\\GoDot\\My Projects\\SpaceshipStartup\\Scenes\\Interactables\\PipePuzzle\\PipePuzzle.cs",
+              "RelativeToolTip": "Scenes\\Interactables\\PipePuzzle\\PipePuzzle.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T01:07:38.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Switch.cs",
+              "DocumentMoniker": "E:\\Projects\\GoDot\\My Projects\\SpaceshipStartup\\Scenes\\Interactables\\Switch.cs",
+              "RelativeDocumentMoniker": "Scenes\\Interactables\\Switch.cs",
+              "ToolTip": "E:\\Projects\\GoDot\\My Projects\\SpaceshipStartup\\Scenes\\Interactables\\Switch.cs",
+              "RelativeToolTip": "Scenes\\Interactables\\Switch.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T07:02:12.941Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LampAlarm.cs",
+              "DocumentMoniker": "E:\\Projects\\GoDot\\My Projects\\SpaceshipStartup\\Scenes\\Interactables\\LampAlarm.cs",
+              "RelativeDocumentMoniker": "Scenes\\Interactables\\LampAlarm.cs",
+              "ToolTip": "E:\\Projects\\GoDot\\My Projects\\SpaceshipStartup\\Scenes\\Interactables\\LampAlarm.cs",
+              "RelativeToolTip": "Scenes\\Interactables\\LampAlarm.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAA5wC4AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T07:01:46.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Globals.cs",
+              "DocumentMoniker": "E:\\PROJECTS\\GODOT\\MY PROJECTS\\SPACESHIPSTARTUP\\Globals\\Globals.cs",
+              "RelativeDocumentMoniker": "Globals\\Globals.cs",
+              "ToolTip": "E:\\PROJECTS\\GODOT\\MY PROJECTS\\SPACESHIPSTARTUP\\Globals\\Globals.cs",
+              "RelativeToolTip": "Globals\\Globals.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T04:04:44.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "WestDoorControl.cs",
+              "DocumentMoniker": "E:\\Projects\\GoDot\\My Projects\\SpaceshipStartup\\Scenes\\Levels\\WestDoorControl.cs",
+              "RelativeDocumentMoniker": "Scenes\\Levels\\WestDoorControl.cs",
+              "ToolTip": "E:\\Projects\\GoDot\\My Projects\\SpaceshipStartup\\Scenes\\Levels\\WestDoorControl.cs",
+              "RelativeToolTip": "Scenes\\Levels\\WestDoorControl.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T03:33:06.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Interactable3D.cs",
+              "DocumentMoniker": "E:\\Projects\\GoDot\\My Projects\\SpaceshipStartup\\Scenes\\Interactables\\Interactable3D.cs",
+              "RelativeDocumentMoniker": "Scenes\\Interactables\\Interactable3D.cs",
+              "ToolTip": "E:\\Projects\\GoDot\\My Projects\\SpaceshipStartup\\Scenes\\Interactables\\Interactable3D.cs",
+              "RelativeToolTip": "Scenes\\Interactables\\Interactable3D.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T03:17:59.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Keycard.cs",
+              "DocumentMoniker": "E:\\Projects\\GoDot\\My Projects\\SpaceshipStartup\\Scenes\\Interactables\\Keycard.cs",
+              "RelativeDocumentMoniker": "Scenes\\Interactables\\Keycard.cs",
+              "ToolTip": "E:\\Projects\\GoDot\\My Projects\\SpaceshipStartup\\Scenes\\Interactables\\Keycard.cs",
+              "RelativeToolTip": "Scenes\\Interactables\\Keycard.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T02:57:51.149Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Log.cs",
+              "DocumentMoniker": "E:\\PROJECTS\\GODOT\\MY PROJECTS\\SPACESHIPSTARTUP\\Globals\\Log.cs",
+              "RelativeDocumentMoniker": "Globals\\Log.cs",
+              "ToolTip": "E:\\PROJECTS\\GODOT\\MY PROJECTS\\SPACESHIPSTARTUP\\Globals\\Log.cs",
+              "RelativeToolTip": "Globals\\Log.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwCUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T02:44:33.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Door.cs",
+              "DocumentMoniker": "E:\\Projects\\GoDot\\My Projects\\SpaceshipStartup\\Scenes\\Interactables\\Door.cs",
+              "RelativeDocumentMoniker": "Scenes\\Interactables\\Door.cs",
+              "ToolTip": "E:\\Projects\\GoDot\\My Projects\\SpaceshipStartup\\Scenes\\Interactables\\Door.cs",
+              "RelativeToolTip": "Scenes\\Interactables\\Door.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAowE4AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T02:44:23.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MapNode.cs",
+              "DocumentMoniker": "E:\\Projects\\GoDot\\My Projects\\SpaceshipStartup\\Scenes\\Levels\\MapNode.cs",
+              "RelativeDocumentMoniker": "Scenes\\Levels\\MapNode.cs",
+              "ToolTip": "E:\\Projects\\GoDot\\My Projects\\SpaceshipStartup\\Scenes\\Levels\\MapNode.cs",
+              "RelativeToolTip": "Scenes\\Levels\\MapNode.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T02:42:27.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Chest.cs",
+              "DocumentMoniker": "E:\\Projects\\GoDot\\My Projects\\SpaceshipStartup\\Scenes\\Interactables\\Chest.cs",
+              "RelativeDocumentMoniker": "Scenes\\Interactables\\Chest.cs",
+              "ToolTip": "E:\\Projects\\GoDot\\My Projects\\SpaceshipStartup\\Scenes\\Interactables\\Chest.cs",
+              "RelativeToolTip": "Scenes\\Interactables\\Chest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T02:32:12.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PipeTile.cs",
+              "DocumentMoniker": "E:\\Projects\\GoDot\\My Projects\\SpaceshipStartup\\Scenes\\Interactables\\PipePuzzle\\PipeTile.cs",
+              "RelativeDocumentMoniker": "Scenes\\Interactables\\PipePuzzle\\PipeTile.cs",
+              "ToolTip": "E:\\Projects\\GoDot\\My Projects\\SpaceshipStartup\\Scenes\\Interactables\\PipePuzzle\\PipeTile.cs",
+              "RelativeToolTip": "Scenes\\Interactables\\PipePuzzle\\PipeTile.cs",
+              "ViewState": "AgIAAHIAAAAAAAAAAIAwwIgAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T01:13:20.082Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

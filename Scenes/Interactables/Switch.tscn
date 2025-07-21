@@ -1,0 +1,47 @@
+[gd_scene load_steps=8 format=3 uid="uid://duntnlbfmp4nh"]
+
+[ext_resource type="Script" uid="uid://b4nkvydyykm7h" path="res://Scenes/Interactables/Switch.cs" id="1_026sn"]
+[ext_resource type="PackedScene" uid="uid://yluwo8g0gjx3" path="res://Scenes/Interactables/Interactable3D.tscn" id="1_sgkuk"]
+[ext_resource type="Texture2D" uid="uid://daijsqxxcqm54" path="res://Assets/2D/My Assets/BackupGenerator/Switch OFF.png" id="2_026sn"]
+[ext_resource type="Texture2D" uid="uid://cunrbpghjkdpy" path="res://Assets/2D/My Assets/BackupGenerator/Switch ON.png" id="3_he1xl"]
+[ext_resource type="PackedScene" uid="uid://dclrvknq7eppm" path="res://Scenes/Interactables/LampAlarm.tscn" id="5_sgkuk"]
+[ext_resource type="AudioStream" uid="uid://ljapayb28jf2" path="res://Assets/SFX/Pixabay/light-flick-on-100133.mp3" id="8_026sn"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wr6c8"]
+size = Vector3(0.831787, 1.68359, 0.0283203)
+
+[node name="Switch" type="Node3D"]
+script = ExtResource("1_026sn")
+
+[node name="Interactable3D" parent="." instance=ExtResource("1_sgkuk")]
+Interaction = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Interactable3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.178711, 0)
+shape = SubResource("BoxShape3D_wr6c8")
+
+[node name="Switch OFF" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 6.3573e-08, 0, 1, 0, -6.3573e-08, 0, 1, 0, -0.118301, 0.0100174)
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("2_026sn")
+
+[node name="Switch ON" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 6.3573e-08, 0, 1, 0, -6.3573e-08, 0, 1, 0, 0.462553, 0.0100174)
+visible = false
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("3_he1xl")
+
+[node name="Switch Icon" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 6.3573e-08, 0, 1, 0, -6.3573e-08, 0, 1, -0.537, -0.526, 0.005)
+alpha_cut = 2
+texture_filter = 0
+
+[node name="Lamp" parent="." instance=ExtResource("5_sgkuk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.06294, 0.00500488)
+
+[node name="FlickAudio" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("8_026sn")
+
+[connection signal="Clicked" from="Interactable3D" to="." method="OnClicked"]

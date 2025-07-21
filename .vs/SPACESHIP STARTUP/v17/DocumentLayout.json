@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Projects\\GoDot\\My Projects\\SpaceshipStartup\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E8A1645D-3240-43E7-8897-85FADBCFD046}|Spaceship Startup.csproj|e:\\projects\\godot\\my projects\\spaceshipstartup\\scenes\\interactables\\backupgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8A1645D-3240-43E7-8897-85FADBCFD046}|Spaceship Startup.csproj|solutionrelative:scenes\\interactables\\backupgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BackupGenerator.cs",
+              "DocumentMoniker": "E:\\Projects\\GoDot\\My Projects\\SpaceshipStartup\\Scenes\\Interactables\\BackupGenerator.cs",
+              "RelativeDocumentMoniker": "Scenes\\Interactables\\BackupGenerator.cs",
+              "ToolTip": "E:\\Projects\\GoDot\\My Projects\\SpaceshipStartup\\Scenes\\Interactables\\BackupGenerator.cs",
+              "RelativeToolTip": "Scenes\\Interactables\\BackupGenerator.cs",
+              "ViewState": "AgIAAJMAAAAAAAAAAAAewKsAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T00:08:35.06Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

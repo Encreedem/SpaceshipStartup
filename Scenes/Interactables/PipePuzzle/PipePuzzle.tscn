@@ -1,0 +1,166 @@
+[gd_scene load_steps=15 format=3 uid="uid://bykjci5kldqx"]
+
+[ext_resource type="PackedScene" uid="uid://bvq6myr32fox" path="res://Scenes/Interactables/PipePuzzle/PipeTileCurve.tscn" id="1_2aro5"]
+[ext_resource type="Texture2D" uid="uid://xvdarq6nayrp" path="res://Assets/2D/My Assets/PipePuzzle/Background.png" id="1_sb14o"]
+[ext_resource type="Script" uid="uid://brfo21sgbamd8" path="res://Scenes/Interactables/PipePuzzle/PipePuzzle.cs" id="1_uo7u0"]
+[ext_resource type="PackedScene" uid="uid://cdmeoq3c7s1ew" path="res://Scenes/Interactables/Inspectable.tscn" id="1_ut1xy"]
+[ext_resource type="Texture2D" uid="uid://bke1cs8wkv7ju" path="res://Assets/2D/My Assets/PipePuzzle/O2.png" id="2_g1fau"]
+[ext_resource type="PackedScene" uid="uid://d3rjnsrthmbtb" path="res://Scenes/Interactables/PipePuzzle/PipeTileStraight.tscn" id="2_ut1xy"]
+[ext_resource type="PackedScene" uid="uid://b4kv238ypx23q" path="res://Scenes/Interactables/PipePuzzle/PipeTileTJunction.tscn" id="3_sb14o"]
+[ext_resource type="PackedScene" uid="uid://ckb44ls5k4xh8" path="res://Scenes/Interactables/PipePuzzle/PipeTileCrossJunction.tscn" id="4_g1fau"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g1fau"]
+albedo_color = Color(0.215902, 0.215902, 0.215902, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_uo7u0"]
+material = SubResource("StandardMaterial3D_g1fau")
+size = Vector3(3, 3.895, 3)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uo7u0"]
+albedo_color = Color(0.435294, 1, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_g1fau"]
+material = SubResource("StandardMaterial3D_uo7u0")
+size = Vector3(3, 3.895, 1.645)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ipcym"]
+albedo_color = Color(0.436839, 0.35369, 0.319919, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_84btv"]
+material = SubResource("StandardMaterial3D_ipcym")
+size = Vector3(4.17, 6.565, 1)
+
+[node name="PipePuzzle" type="Node3D"]
+script = ExtResource("1_uo7u0")
+
+[node name="Background" type="Sprite3D" parent="."]
+transform = Transform3D(1.22, 0, 0, 0, 1.22, 0, 0, 0, 1.22, 0, 0, 0)
+sorting_offset = -1.0
+texture = ExtResource("1_sb14o")
+metadata/_edit_lock_ = true
+
+[node name="O2Block" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.278, 7.884, 0)
+mesh = SubResource("BoxMesh_uo7u0")
+
+[node name="O2" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.2779, 7.88431, 1.50646)
+alpha_antialiasing_mode = 1
+texture = ExtResource("2_g1fau")
+
+[node name="GreenBlock" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.00968, -8.67719, 0)
+mesh = SubResource("BoxMesh_g1fau")
+
+[node name="RnBlock" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.06626, -10.8933, 0)
+mesh = SubResource("BoxMesh_84btv")
+
+[node name="Inspectable" parent="." instance=ExtResource("1_ut1xy")]
+
+[node name="PipeTiles" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.01)
+
+[node name="PipeTileCurve3" parent="PipeTiles" instance=ExtResource("1_2aro5")]
+transform = Transform3D(1.56, 0, 0, 0, 1.56, 0, 0, 0, 1.56, 3, 3, 0)
+InitOrientation = 2
+InputPipeDirection = 1
+InputPipeGas = 2
+
+[node name="PipeTileCurve7" parent="PipeTiles" instance=ExtResource("1_2aro5")]
+transform = Transform3D(1.56, 0, 0, 0, 1.56, 0, 0, 0, 1.56, 5, 1, 0)
+InputPipeDirection = 2
+InputPipeGas = 128
+
+[node name="PipeTileCurve8" parent="PipeTiles" instance=ExtResource("1_2aro5")]
+transform = Transform3D(1.56, 0, 0, 0, 1.56, 0, 0, 0, 1.56, 5, -1, 0)
+InitOrientation = 3
+OutputPipeDirection = 2
+
+[node name="PipeTileCurve13" parent="PipeTiles" instance=ExtResource("1_2aro5")]
+transform = Transform3D(1.56, 0, 0, 0, 1.56, 0, 0, 0, 1.56, 5, -3, 0)
+InitOrientation = 2
+
+[node name="PipeTileCurve4" parent="PipeTiles" instance=ExtResource("1_2aro5")]
+transform = Transform3D(1.56, 0, 0, 0, 1.56, 0, 0, 0, 1.56, 5, 3, 0)
+InitOrientation = 1
+
+[node name="PipeTileCurve2" parent="PipeTiles" instance=ExtResource("1_2aro5")]
+transform = Transform3D(1.56, 0, 0, 0, 1.56, 0, 0, 0, 1.56, -5, 3, 0)
+
+[node name="PipeTileCurve5" parent="PipeTiles" instance=ExtResource("1_2aro5")]
+transform = Transform3D(1.56, 0, 0, 0, 1.56, 0, 0, 0, 1.56, -5, 1, 0)
+InitOrientation = 1
+InputPipeDirection = 8
+InputPipeGas = 8
+
+[node name="PipeTileCurve9" parent="PipeTiles" instance=ExtResource("1_2aro5")]
+transform = Transform3D(1.56, 0, 0, 0, 1.56, 0, 0, 0, 1.56, -5, -3, 0)
+InitOrientation = 3
+
+[node name="PipeTileCurve10" parent="PipeTiles" instance=ExtResource("1_2aro5")]
+transform = Transform3D(1.56, 0, 0, 0, 1.56, 0, 0, 0, 1.56, -3, -3, 0)
+InputPipeDirection = 4
+InputPipeGas = 64
+
+[node name="PipeTileCurve11" parent="PipeTiles" instance=ExtResource("1_2aro5")]
+transform = Transform3D(1.56, 0, 0, 0, 1.56, 0, 0, 0, 1.56, -1, -3, 0)
+InitOrientation = 2
+
+[node name="PipeTileCurve12" parent="PipeTiles" instance=ExtResource("1_2aro5")]
+transform = Transform3D(1.56, 0, 0, 0, 1.56, 0, 0, 0, 1.56, 1, -3, 0)
+InputPipeDirection = 4
+InputPipeGas = 16
+
+[node name="PipeTileCurve6" parent="PipeTiles" instance=ExtResource("1_2aro5")]
+transform = Transform3D(1.56, 0, 0, 0, 1.56, 0, 0, 0, 1.56, -1, 1, 0)
+InitOrientation = 3
+
+[node name="PipeTileStraight2" parent="PipeTiles" instance=ExtResource("2_ut1xy")]
+transform = Transform3D(1.56, 0, 0, 0, 1.56, 0, 0, 0, 1.56, 1, 1, 0)
+
+[node name="PipeTileStraight6" parent="PipeTiles" instance=ExtResource("2_ut1xy")]
+transform = Transform3D(1.56, 0, 0, 0, 1.56, 0, 0, 0, 1.56, 3, -1, 0)
+InitOrientation = 1
+
+[node name="PipeTileStraight4" parent="PipeTiles" instance=ExtResource("2_ut1xy")]
+transform = Transform3D(1.56, 0, 0, 0, 1.56, 0, 0, 0, 1.56, -5, -1, 0)
+InitOrientation = 1
+InputPipeDirection = 8
+InputPipeGas = 4
+
+[node name="PipeTileStraight5" parent="PipeTiles" instance=ExtResource("2_ut1xy")]
+transform = Transform3D(1.56, 0, 0, 0, 1.56, 0, 0, 0, 1.56, -3, -1, 0)
+InitOrientation = 1
+
+[node name="PipeTileStraight3" parent="PipeTiles" instance=ExtResource("2_ut1xy")]
+transform = Transform3D(1.56, 0, 0, 0, 1.56, 0, 0, 0, 1.56, 3, 1, 0)
+InitOrientation = 1
+
+[node name="PipeTileTJunction2" parent="PipeTiles" instance=ExtResource("3_sb14o")]
+transform = Transform3D(1.56, 0, 0, 0, 1.56, 0, 0, 0, 1.56, -3, 3, 0)
+
+[node name="PipeTileTJunction4" parent="PipeTiles" instance=ExtResource("3_sb14o")]
+transform = Transform3D(1.56, 0, 0, 0, 1.56, 0, 0, 0, 1.56, -3, 1, 0)
+
+[node name="PipeTileTJunction5" parent="PipeTiles" instance=ExtResource("3_sb14o")]
+transform = Transform3D(1.56, 0, 0, 0, 1.56, 0, 0, 0, 1.56, -1, -1, 0)
+
+[node name="PipeTileTJunction6" parent="PipeTiles" instance=ExtResource("3_sb14o")]
+transform = Transform3D(1.56, 0, 0, 0, 1.56, 0, 0, 0, 1.56, 1, -1, 0)
+InitOrientation = 2
+
+[node name="PipeTileTJunction7" parent="PipeTiles" instance=ExtResource("3_sb14o")]
+transform = Transform3D(1.56, 0, 0, 0, 1.56, 0, 0, 0, 1.56, 3, -3, 0)
+InitOrientation = 2
+
+[node name="PipeTileTJunction3" parent="PipeTiles" instance=ExtResource("3_sb14o")]
+transform = Transform3D(1.56, 0, 0, 0, 1.56, 0, 0, 0, 1.56, -1, 3, 0)
+InitOrientation = 2
+InputPipeDirection = 1
+InputPipeGas = 32
+
+[node name="PipeTileCrossJunction2" parent="PipeTiles" instance=ExtResource("4_g1fau")]
+transform = Transform3D(1.56, 0, 0, 0, 1.56, 0, 0, 0, 1.56, 1, 3, 0)
+
+[connection signal="GasOutputAdded" from="PipeTiles/PipeTileCurve8" to="." method="OnOutputAdded"]

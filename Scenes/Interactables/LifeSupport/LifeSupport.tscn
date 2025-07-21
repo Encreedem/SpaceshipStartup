@@ -1,0 +1,1408 @@
+[gd_scene load_steps=54 format=3 uid="uid://bxt83om1bxkbx"]
+
+[ext_resource type="PackedScene" uid="uid://cdmeoq3c7s1ew" path="res://Scenes/Interactables/Inspectable.tscn" id="1_7t0dq"]
+[ext_resource type="Script" uid="uid://drbdtamgnuh37" path="res://Scenes/Interactables/LifeSupport/LifeSupport.cs" id="1_gckau"]
+[ext_resource type="Texture2D" uid="uid://cpok7ixmw0j84" path="res://Assets/2D/My Assets/LifeSupport/Background.png" id="1_vg5ur"]
+[ext_resource type="Texture2D" uid="uid://d22xgu71wq1rt" path="res://Assets/2D/My Assets/LifeSupport/Filter.png" id="2_7t0dq"]
+[ext_resource type="Texture2D" uid="uid://bqsoocy56h6wi" path="res://Assets/2D/My Assets/LifeSupport/Number Display.png" id="3_evyvo"]
+[ext_resource type="Texture2D" uid="uid://bu5yes6bmxayd" path="res://Assets/2D/My Assets/LifeSupport/Button Pressed.png" id="4_opoa6"]
+[ext_resource type="Texture2D" uid="uid://bixqlv1byo15" path="res://Assets/2D/My Assets/LifeSupport/Button Idle.png" id="5_gckau"]
+[ext_resource type="Texture2D" uid="uid://xgp71haqr0mn" path="res://Assets/2D/My Assets/LifeSupport/Empty Pod.png" id="6_tsejv"]
+[ext_resource type="Texture2D" uid="uid://c2ybbts3xghgj" path="res://Assets/2D/My Assets/LifeSupport/Full Pod.png" id="7_xg3xo"]
+[ext_resource type="Texture2D" uid="uid://dkk2lf8hkudfe" path="res://Assets/2D/My Assets/LifeSupport/Gas Labels.png" id="8_wn2wa"]
+[ext_resource type="Texture2D" uid="uid://7c41vbpd626o" path="res://Assets/2D/My Assets/LifeSupport/Xe ....png" id="9_88jj1"]
+[ext_resource type="Texture2D" uid="uid://b20x57q41x4h5" path="res://Assets/2D/My Assets/LifeSupport/Flame Icon.png" id="10_xli3k"]
+[ext_resource type="Texture2D" uid="uid://duqvyqjde5q8j" path="res://Assets/2D/My Assets/LifeSupport/Scanner Center.png" id="11_75wr8"]
+[ext_resource type="Texture2D" uid="uid://r0p252p24lv4" path="res://Assets/2D/My Assets/LifeSupport/Scanner Left 1.png" id="12_c2xgn"]
+[ext_resource type="PackedScene" uid="uid://dclrvknq7eppm" path="res://Scenes/Interactables/LampAlarm.tscn" id="12_tsejv"]
+[ext_resource type="Texture2D" uid="uid://bgftvaicveyh0" path="res://Assets/2D/My Assets/LifeSupport/Scanner Left 2.png" id="13_l1jkb"]
+[ext_resource type="Texture2D" uid="uid://xorx4po4fkk0" path="res://Assets/2D/My Assets/LifeSupport/Scanner Left 3.png" id="14_uugeq"]
+[ext_resource type="Texture2D" uid="uid://btvnevgc1tex4" path="res://Assets/2D/My Assets/LifeSupport/Scanner Right 1.png" id="15_hwvcl"]
+[ext_resource type="Texture2D" uid="uid://ceyr6vpv1e5qr" path="res://Assets/2D/My Assets/LifeSupport/Scanner Right 2.png" id="16_mjhap"]
+[ext_resource type="PackedScene" uid="uid://yluwo8g0gjx3" path="res://Scenes/Interactables/Interactable3D.tscn" id="16_xg3xo"]
+[ext_resource type="Texture2D" uid="uid://bicsogyoet4uy" path="res://Assets/2D/My Assets/LifeSupport/Scanner Right 3.png" id="17_xaly2"]
+[ext_resource type="Texture2D" uid="uid://bgqa2rw4sawgs" path="res://Assets/2D/My Assets/Breathable/Alien Icon.png" id="18_yr6ar"]
+[ext_resource type="Texture2D" uid="uid://dk0r2oyrr0u57" path="res://Assets/2D/My Assets/Breathable/Tentacle Icon.png" id="19_803ya"]
+[ext_resource type="Texture2D" uid="uid://bd81ljhu537yg" path="res://Assets/2D/My Assets/Breathable/Blob Icon.png" id="20_nvopf"]
+[ext_resource type="Texture2D" uid="uid://cxhbep4xv0sf4" path="res://Assets/2D/My Assets/Breathable/Human Icon.png" id="21_sbd8b"]
+[ext_resource type="AudioStream" uid="uid://83axhj1r3ted" path="res://Assets/SFX/Pixabay/deepscanmp3-14662_shortened.mp3" id="25_tsejv"]
+[ext_resource type="Texture2D" uid="uid://d1em5a2l1sutp" path="res://Assets/2D/My Assets/LifeSupport/DisplayLoadingIcon.png" id="26_xli3k"]
+[ext_resource type="Texture2D" uid="uid://b3e2ls8ih1paa" path="res://Assets/2D/My Assets/LifeSupport/DisplayScan.png" id="27_75wr8"]
+[ext_resource type="Texture2D" uid="uid://cpvb52ey7ccqx" path="res://Assets/2D/My Assets/LifeSupport/DisplayGases.png" id="28_c2xgn"]
+[ext_resource type="Texture2D" uid="uid://e4kfxos3gbu4" path="res://Assets/2D/My Assets/LifeSupport/DisplayFilter.png" id="29_l1jkb"]
+[ext_resource type="Texture2D" uid="uid://cr3p6npn75jpk" path="res://Assets/2D/My Assets/LifeSupport/DisplayCheckmark.png" id="30_c2xgn"]
+[ext_resource type="Texture2D" uid="uid://dg8xtya1wli6e" path="res://Assets/2D/My Assets/LifeSupport/DisplayError.png" id="31_l1jkb"]
+[ext_resource type="AudioStream" uid="uid://ye4s716d7ngr" path="res://Assets/SFX/Pixabay/generator-87782_loop.mp3" id="33_l1jkb"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wn2wa"]
+size = Vector3(1, 1, 0.216797)
+
+[sub_resource type="Animation" id="Animation_xg3xo"]
+resource_name = "FullyLit"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ScannerCenter:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0.931816, 0.335085, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ScannerLeft1:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0.931816, 0.335085, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ScannerLeft2:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0.931816, 0.335085, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("ScannerLeft3:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0.931816, 0.335085, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("ScannerRight1:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0.931816, 0.335085, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("ScannerRight2:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0.931816, 0.335085, 1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("ScannerRight3:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0.931816, 0.335085, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_gckau"]
+resource_name = "Pulse"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ScannerCenter:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8),
+"transitions": PackedFloat32Array(0, 0, 0, 0, 0),
+"update": 0,
+"values": [Color(0, 0.931816, 0.335085, 1), Color(0.775063, 0.775063, 0.775063, 1), Color(0.775063, 0.775063, 0.775063, 1), Color(0.775063, 0.775063, 0.775063, 1), Color(0.775063, 0.775063, 0.775063, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ScannerLeft1:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8),
+"transitions": PackedFloat32Array(0, 0, 0, 0, 0),
+"update": 0,
+"values": [Color(0.775063, 0.775063, 0.775063, 1), Color(0, 0.931816, 0.335085, 1), Color(0.775063, 0.775063, 0.775063, 1), Color(0.775063, 0.775063, 0.775063, 1), Color(0.775063, 0.775063, 0.775063, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ScannerLeft2:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8),
+"transitions": PackedFloat32Array(0, 0, 0, 0, 0),
+"update": 0,
+"values": [Color(0.775063, 0.775063, 0.775063, 1), Color(0.775063, 0.775063, 0.775063, 1), Color(0, 0.931816, 0.335085, 1), Color(0.775063, 0.775063, 0.775063, 1), Color(0.775063, 0.775063, 0.775063, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("ScannerLeft3:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8),
+"transitions": PackedFloat32Array(0, 0, 0, 0, 0),
+"update": 0,
+"values": [Color(0.775063, 0.775063, 0.775063, 1), Color(0.775063, 0.775063, 0.775063, 1), Color(0.775063, 0.775063, 0.775063, 1), Color(0, 0.931816, 0.335085, 1), Color(0.775063, 0.775063, 0.775063, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("ScannerRight1:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8),
+"transitions": PackedFloat32Array(0, 0, 0, 0, 0),
+"update": 0,
+"values": [Color(0.775063, 0.775063, 0.775063, 1), Color(0, 0.931816, 0.335085, 1), Color(0.775063, 0.775063, 0.775063, 1), Color(0.775063, 0.775063, 0.775063, 1), Color(0.775063, 0.775063, 0.775063, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("ScannerRight2:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8),
+"transitions": PackedFloat32Array(0, 0, 0, 0, 0),
+"update": 0,
+"values": [Color(0.775063, 0.775063, 0.775063, 1), Color(0.775063, 0.775063, 0.775063, 1), Color(0, 0.931816, 0.335085, 1), Color(0.775063, 0.775063, 0.775063, 1), Color(0.775063, 0.775063, 0.775063, 1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("ScannerRight3:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8),
+"transitions": PackedFloat32Array(0, 0, 0, 0, 0),
+"update": 0,
+"values": [Color(0.775063, 0.775063, 0.775063, 1), Color(0.775063, 0.775063, 0.775063, 1), Color(0.775063, 0.775063, 0.775063, 1), Color(0, 0.931816, 0.335085, 1), Color(0.775063, 0.775063, 0.775063, 1)]
+}
+tracks/7/type = "audio"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("ScanAudio")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("25_tsejv")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/7/use_blend = true
+
+[sub_resource type="Animation" id="Animation_tsejv"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ScannerCenter:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.775063, 0.775063, 0.775063, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ScannerLeft1:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.775063, 0.775063, 0.775063, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ScannerLeft2:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.775063, 0.775063, 0.775063, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("ScannerLeft3:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.775063, 0.775063, 0.775063, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("ScannerRight1:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.775063, 0.775063, 0.775063, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("ScannerRight2:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.775063, 0.775063, 0.775063, 1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("ScannerRight3:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.775063, 0.775063, 0.775063, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_wn2wa"]
+_data = {
+&"FullyLit": SubResource("Animation_xg3xo"),
+&"Pulse": SubResource("Animation_gckau"),
+&"RESET": SubResource("Animation_tsejv")
+}
+
+[sub_resource type="Animation" id="Animation_l1jkb"]
+resource_name = "Checkmark"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LoadingIcon:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Scan:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Gases:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Filter:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Checkmark:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Error:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_xaly2"]
+resource_name = "Error"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LoadingIcon:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Scan:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Gases:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Filter:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Checkmark:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Error:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_sbd8b"]
+resource_name = "Filter"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LoadingIcon:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Scan:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Gases:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Filter:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Checkmark:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Error:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_mjhap"]
+resource_name = "Gases"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LoadingIcon:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Scan:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Gases:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Filter:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Checkmark:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Error:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_uugeq"]
+resource_name = "Load"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LoadingIcon:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("LoadingIcon:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 0, -18.8496)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Scan:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Gases:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Filter:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Checkmark:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Error:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_hwvcl"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LoadingIcon:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("LoadingIcon:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Scan:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Gases:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Filter:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Checkmark:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Error:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_c2xgn"]
+resource_name = "Scan"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LoadingIcon:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Scan:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Gases:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Filter:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Checkmark:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Error:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_mjhap"]
+_data = {
+&"Checkmark": SubResource("Animation_l1jkb"),
+&"Error": SubResource("Animation_xaly2"),
+&"Filter": SubResource("Animation_sbd8b"),
+&"Gases": SubResource("Animation_mjhap"),
+&"Load": SubResource("Animation_uugeq"),
+&"RESET": SubResource("Animation_hwvcl"),
+&"Scan": SubResource("Animation_c2xgn")
+}
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c2xgn"]
+albedo_color = Color(0, 0.981393, 0.755868, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_l1jkb"]
+material = SubResource("StandardMaterial3D_c2xgn")
+top_radius = 0.55
+bottom_radius = 0.49
+height = 0.77
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_c2xgn"]
+size = Vector3(1.20703, 1.1582, 0.225586)
+
+[sub_resource type="Animation" id="Animation_nvopf"]
+resource_name = "InsertFullFilter"
+length = 2.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("FullPod:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 1.36667, 1.56667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(1.2469, -1.76542, 1.5155), Vector3(1.2469, -1.76542, 0.250576), Vector3(1.2469, -1.76542, 0.250576), Vector3(1.2469, -1.76542, 0.01)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("FullPod:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 2, 2.3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, -1.5708), Vector3(0, 0, -1.5708), Vector3(0, 0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("FullPod:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("EmptyPod:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_803ya"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("EmptyPod:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("EmptyPod:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(1.2469, -1.76542, 0.01)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("EmptyPod:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("FullPod:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(1.2469, -1.76542, 0.01)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("FullPod:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("FullPod:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_yr6ar"]
+resource_name = "RemoveEmptyFilter"
+length = 2.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("EmptyPod:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.7, 0.766667, 1.26667, 2, 2.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 2, 1),
+"update": 0,
+"values": [Vector3(1.2469, -1.76542, 0.01), Vector3(1.2469, -1.76542, 0.01), Vector3(1.2469, -1.76542, 0.0787945), Vector3(1.2469, -1.76542, 0.0787945), Vector3(1.2469, -1.85048, 0.779516), Vector3(1.2469, -9.5536, 0.779516)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("EmptyPod:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.6, 0.7, 2, 2.3),
+"transitions": PackedFloat32Array(1, 1, 1, 2, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 0, -0.991906), Vector3(0, 0, -1.5708), Vector3(0, 0, -1.5708), Vector3(-1.15647, 4.41253e-15, -1.5708)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("EmptyPod:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 2.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_nvopf"]
+_data = {
+&"InsertFullFilter": SubResource("Animation_nvopf"),
+&"RESET": SubResource("Animation_803ya"),
+&"RemoveEmptyFilter": SubResource("Animation_yr6ar")
+}
+
+[node name="LifeSupport" type="Node3D"]
+script = ExtResource("1_gckau")
+
+[node name="Inspectable" parent="." instance=ExtResource("1_7t0dq")]
+
+[node name="Decorative" type="Node3D" parent="."]
+
+[node name="GasLabels" type="Sprite3D" parent="Decorative"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.03851, 2.45867, 0.01)
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("8_wn2wa")
+
+[node name="Background" type="Sprite3D" parent="Decorative"]
+alpha_cut = 2
+texture = ExtResource("1_vg5ur")
+metadata/_edit_lock_ = true
+
+[node name="Filter" type="Sprite3D" parent="Decorative"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.09216, -1.80016, 0.01)
+alpha_cut = 2
+texture = ExtResource("2_7t0dq")
+
+[node name="GasText" type="Sprite3D" parent="Decorative"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.03851, 2.45867, 0.01)
+sorting_offset = 1.0
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("9_88jj1")
+
+[node name="FlameIcon" type="Sprite3D" parent="Decorative"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.03851, -0.515014, 0.01)
+sorting_offset = 1.0
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("10_xli3k")
+
+[node name="Alien" type="Sprite3D" parent="Decorative"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.85435, 2.66231, 0.01)
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("18_yr6ar")
+
+[node name="Tentacle" type="Sprite3D" parent="Decorative"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.85435, 0.827368, 0.01)
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("19_803ya")
+
+[node name="Blob" type="Sprite3D" parent="Decorative"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.85435, -0.903917, 0.01)
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("20_nvopf")
+
+[node name="Human" type="Sprite3D" parent="Decorative"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.85435, -2.91721, 0.01)
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("21_sbd8b")
+
+[node name="NumberDisplayAlien" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.31877, 2.72162, 0.01)
+alpha_cut = 2
+texture = ExtResource("3_evyvo")
+
+[node name="Label3D" type="Label3D" parent="NumberDisplayAlien"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.1)
+sorting_offset = 2.0
+text = "-"
+font_size = 215
+
+[node name="NumberDisplayTentacle" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.31877, 0.839818, 0.01)
+alpha_cut = 2
+texture = ExtResource("3_evyvo")
+
+[node name="Label3D" type="Label3D" parent="NumberDisplayTentacle"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.1)
+sorting_offset = 2.0
+text = "-"
+font_size = 215
+
+[node name="NumberDisplayBlob" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.31877, -0.993736, 0.01)
+alpha_cut = 2
+texture = ExtResource("3_evyvo")
+
+[node name="Label3D" type="Label3D" parent="NumberDisplayBlob"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.1)
+sorting_offset = 2.0
+text = "-"
+font_size = 215
+
+[node name="NumberDisplayHuman" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.31877, -2.89967, 0.01)
+alpha_cut = 2
+texture = ExtResource("3_evyvo")
+
+[node name="Label3D" type="Label3D" parent="NumberDisplayHuman"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.1)
+sorting_offset = 2.0
+text = "-"
+font_size = 215
+
+[node name="ButtonPressed" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.73047, -1.24442, 0.01)
+visible = false
+alpha_cut = 2
+texture = ExtResource("4_opoa6")
+
+[node name="ButtonIdle" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.73047, -1.24442, 0.01)
+alpha_cut = 2
+texture = ExtResource("5_gckau")
+
+[node name="ButtonInteractable" parent="." instance=ExtResource("16_xg3xo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.72835, -1.23146, 0)
+Interaction = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ButtonInteractable"]
+shape = SubResource("BoxShape3D_wn2wa")
+
+[node name="Scanner" type="Node3D" parent="."]
+
+[node name="ScannerCenter" type="Sprite3D" parent="Scanner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.75543, 4.06228, 0.01)
+modulate = Color(0.775063, 0.775063, 0.775063, 1)
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("11_75wr8")
+
+[node name="ScannerLeft1" type="Sprite3D" parent="Scanner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.19689, 4.10334, 0.01)
+modulate = Color(0.775063, 0.775063, 0.775063, 1)
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("12_c2xgn")
+
+[node name="ScannerLeft2" type="Sprite3D" parent="Scanner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.94959, 4.06228, 0.01)
+modulate = Color(0.775063, 0.775063, 0.775063, 1)
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("13_l1jkb")
+
+[node name="ScannerLeft3" type="Sprite3D" parent="Scanner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.64903, 4.06228, 0.01)
+modulate = Color(0.775063, 0.775063, 0.775063, 1)
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("14_uugeq")
+
+[node name="ScannerRight1" type="Sprite3D" parent="Scanner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.27761, 4.06228, 0.01)
+modulate = Color(0.775063, 0.775063, 0.775063, 1)
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("15_hwvcl")
+
+[node name="ScannerRight2" type="Sprite3D" parent="Scanner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.49828, 4.06228, 0.01)
+modulate = Color(0.775063, 0.775063, 0.775063, 1)
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("16_mjhap")
+
+[node name="ScannerRight3" type="Sprite3D" parent="Scanner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.72656, 4.06228, 0.01)
+modulate = Color(0.775063, 0.775063, 0.775063, 1)
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("17_xaly2")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Scanner"]
+libraries = {
+&"": SubResource("AnimationLibrary_wn2wa")
+}
+
+[node name="ScanAudio" type="AudioStreamPlayer3D" parent="Scanner"]
+volume_db = -12.0
+
+[node name="Display" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.77054, 0.906323, 0.01)
+
+[node name="LoadingIcon" type="Sprite3D" parent="Display"]
+visible = false
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("26_xli3k")
+
+[node name="Scan" type="Sprite3D" parent="Display"]
+visible = false
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("27_75wr8")
+
+[node name="Gases" type="Sprite3D" parent="Display"]
+visible = false
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("28_c2xgn")
+
+[node name="Filter" type="Sprite3D" parent="Display"]
+visible = false
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("29_l1jkb")
+
+[node name="Checkmark" type="Sprite3D" parent="Display"]
+visible = false
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("30_c2xgn")
+
+[node name="Error" type="Sprite3D" parent="Display"]
+visible = false
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("31_l1jkb")
+
+[node name="DisplayAnimationPlayer" type="AnimationPlayer" parent="Display"]
+libraries = {
+&"": SubResource("AnimationLibrary_mjhap")
+}
+autoplay = "RESET"
+
+[node name="Lamps" type="Node3D" parent="."]
+
+[node name="LampFilter" parent="Lamps" instance=ExtResource("12_tsejv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.36255, -3.98234, 0.01)
+
+[node name="LampGases" parent="Lamps" instance=ExtResource("12_tsejv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.01851, 3.60363, 0.01)
+
+[node name="GasLamps" type="Node3D" parent="Lamps"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.786, 2.462, 0.01)
+
+[node name="LampXe" parent="Lamps/GasLamps" instance=ExtResource("12_tsejv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.18438, 0)
+
+[node name="LampAr" parent="Lamps/GasLamps" instance=ExtResource("12_tsejv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.21674, 0)
+
+[node name="LampO2" parent="Lamps/GasLamps" instance=ExtResource("12_tsejv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.402385, 0)
+
+[node name="LampRn" parent="Lamps/GasLamps" instance=ExtResource("12_tsejv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.507772, 0)
+
+[node name="LampCl" parent="Lamps/GasLamps" instance=ExtResource("12_tsejv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.31254, 0)
+
+[node name="LampU" parent="Lamps/GasLamps" instance=ExtResource("12_tsejv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.21312, 0)
+
+[node name="LampFire" parent="Lamps/GasLamps" instance=ExtResource("12_tsejv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3.05621, 0)
+
+[node name="LampAlien" parent="Lamps" instance=ExtResource("12_tsejv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.22435, 2.70426, 0.01)
+
+[node name="LampTentacle" parent="Lamps" instance=ExtResource("12_tsejv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.22435, 0.840358, 0.01)
+
+[node name="LampBlob" parent="Lamps" instance=ExtResource("12_tsejv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.22435, -1.01051, 0.01)
+
+[node name="LampHuman" parent="Lamps" instance=ExtResource("12_tsejv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.22435, -2.93959, 0.01)
+
+[node name="Filter" type="Node3D" parent="."]
+
+[node name="EmptyPod" type="Sprite3D" parent="Filter"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2469, -1.76542, 0.01)
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("6_tsejv")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Filter/EmptyPod"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, -0.392871)
+mesh = SubResource("CylinderMesh_l1jkb")
+
+[node name="FullPod" type="Sprite3D" parent="Filter"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2469, -1.76542, 0.01)
+visible = false
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("7_xg3xo")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Filter/FullPod"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, -0.392871)
+mesh = SubResource("CylinderMesh_l1jkb")
+
+[node name="EmptyFilterInteractable" parent="Filter" instance=ExtResource("16_xg3xo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.24345, -1.75706, 0)
+Interaction = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Filter/EmptyFilterInteractable"]
+shape = SubResource("BoxShape3D_c2xgn")
+
+[node name="FullFilterInteractable" parent="Filter" instance=ExtResource("16_xg3xo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.24345, -1.75706, 0)
+visible = false
+Interaction = 3
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Filter/FullFilterInteractable"]
+shape = SubResource("BoxShape3D_c2xgn")
+
+[node name="FilterAnimationPlayer" type="AnimationPlayer" parent="Filter"]
+libraries = {
+&"": SubResource("AnimationLibrary_nvopf")
+}
+autoplay = "RESET"
+
+[node name="PodAnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="PhaseDelayTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="GeneratorHum" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(5, 0, -1.13687e-13, 0, 5, 0, 1.13687e-13, 0, 5, 0, 0, 0)
+stream = ExtResource("33_l1jkb")
+volume_db = -20.0
+
+[connection signal="Clicked" from="ButtonInteractable" to="." method="OnButtonInteractableClicked"]
+[connection signal="animation_finished" from="Scanner/AnimationPlayer" to="." method="OnScannerAnimationPlayerAnimationFinished"]
+[connection signal="animation_finished" from="Display/DisplayAnimationPlayer" to="." method="OnDisplayAnimationPlayerAnimationFinished"]
+[connection signal="Clicked" from="Filter/EmptyFilterInteractable" to="." method="OnEmptyFilterInteractableClicked"]
+[connection signal="Clicked" from="Filter/FullFilterInteractable" to="." method="OnFullFilterInteractableClicked"]
+[connection signal="animation_finished" from="Filter/FilterAnimationPlayer" to="." method="OnFilterAnimationPlayerAnimationFinished"]
+[connection signal="timeout" from="PhaseDelayTimer" to="." method="OnPhaseDelayTimerTimeout"]

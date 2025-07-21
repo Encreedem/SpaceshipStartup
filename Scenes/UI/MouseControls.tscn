@@ -1,0 +1,391 @@
+[gd_scene load_steps=17 format=3 uid="uid://crqacody4fc1u"]
+
+[ext_resource type="Script" uid="uid://cwcwtep3vle1o" path="res://Scenes/UI/MouseControls.cs" id="1_04uc2"]
+[ext_resource type="Texture2D" uid="uid://mt0rriyr7gba" path="res://Assets/UI/Kenney/UI Pack - Sci-fi/metalPanel.png" id="2_sr5b4"]
+[ext_resource type="Texture2D" uid="uid://blctrj557hfty" path="res://Assets/UI/Kenney/UI Pack/Blue/Double/icon_checkmark.png" id="3_vuqmh"]
+[ext_resource type="Texture2D" uid="uid://cbll21v0htrg7" path="res://Assets/UI/Kenney/UI Pack - Sci-fi/Extra/Double/button_rectangle_depth.png" id="4_6vy2k"]
+[ext_resource type="Texture2D" uid="uid://bm4qd58sb2inr" path="res://Assets/UI/Kenney/UI Pack - Sci-fi/Extra/Double/button_rectangle.png" id="5_blm7w"]
+
+[sub_resource type="Animation" id="Animation_04uc2"]
+resource_name = "HighlightMoveForward"
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Highlight:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0.780392, 1, 0), Color(0, 0.780392, 1, 0.407843)]
+}
+
+[sub_resource type="Animation" id="Animation_wulro"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Highlight:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0.780392, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_sr5b4"]
+_data = {
+&"HighlightMoveForward": SubResource("Animation_04uc2"),
+&"RESET": SubResource("Animation_wulro")
+}
+
+[sub_resource type="Animation" id="Animation_mjhlb"]
+resource_name = "HighlightGoBack"
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("GoBack/Highlight:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0.780392, 1, 0), Color(0, 0.780392, 1, 0.407843)]
+}
+
+[sub_resource type="Animation" id="Animation_4rabn"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("GoBack/Highlight:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0.780392, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_04uc2"]
+_data = {
+&"HighlightGoBack": SubResource("Animation_mjhlb"),
+&"RESET": SubResource("Animation_4rabn")
+}
+
+[sub_resource type="Animation" id="Animation_sr5b4"]
+resource_name = "HighlightTurn"
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TurnLeft/Highlight:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0.780392, 1, 0), Color(0, 0.780392, 1, 0.407843)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TurnRight/Highlight:color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0.780392, 1, 0), Color(0, 0.780392, 1, 0.407843)]
+}
+
+[sub_resource type="Animation" id="Animation_vuqmh"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TurnLeft/Highlight:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0.780392, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TurnRight/Highlight:color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0.780392, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6vy2k"]
+_data = {
+&"HighlightTurn": SubResource("Animation_sr5b4"),
+&"RESET": SubResource("Animation_vuqmh")
+}
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8jjqe"]
+texture = ExtResource("4_6vy2k")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_43p6e"]
+texture = ExtResource("5_blm7w")
+
+[node name="MouseControls" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_04uc2")
+metadata/_edit_lock_ = true
+
+[node name="MoveForward" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -192.0
+offset_right = 192.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Highlight" type="ColorRect" parent="MoveForward"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0.780392, 1, 0)
+
+[node name="MoveForwardHighlighter" type="AnimationPlayer" parent="MoveForward"]
+libraries = {
+&"": SubResource("AnimationLibrary_sr5b4")
+}
+
+[node name="TurnLeft" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 200.0
+grow_vertical = 2
+
+[node name="Highlight" type="ColorRect" parent="TurnLeft"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0.780392, 1, 0)
+
+[node name="TurnRight" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -200.0
+offset_top = 100.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="Highlight" type="ColorRect" parent="TurnRight"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0.780392, 1, 0)
+
+[node name="GoBack" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 200.0
+offset_top = -109.0
+offset_right = -200.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Highlight" type="ColorRect" parent="GoBack"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0.780392, 1, 0)
+
+[node name="GoBackHighlighter" type="AnimationPlayer" parent="GoBack"]
+root_node = NodePath("../..")
+libraries = {
+&"": SubResource("AnimationLibrary_04uc2")
+}
+
+[node name="TurnHighlighter" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_6vy2k")
+}
+
+[node name="Tutorial" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TutorialBox" type="NinePatchRect" parent="Tutorial"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -315.0
+offset_top = -148.0
+offset_right = 315.0
+offset_bottom = 148.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_sr5b4")
+region_rect = Rect2(0, 0, 100, 100)
+patch_margin_left = 11
+patch_margin_top = 11
+patch_margin_right = 11
+patch_margin_bottom = 11
+
+[node name="Label" type="Label" parent="Tutorial/TutorialBox"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -234.0
+offset_top = 17.0
+offset_right = 234.0
+offset_bottom = 192.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "Start game?"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Confirm" type="Button" parent="Tutorial/TutorialBox"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -67.0
+offset_top = -92.0
+offset_right = 67.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_icons/icon = ExtResource("3_vuqmh")
+theme_override_styles/focus = SubResource("StyleBoxTexture_8jjqe")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_43p6e")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_43p6e")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxTexture_8jjqe")
+theme_override_styles/hover = SubResource("StyleBoxTexture_8jjqe")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_43p6e")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxTexture_8jjqe")
+theme_override_styles/normal = SubResource("StyleBoxTexture_8jjqe")
+icon_alignment = 1
+
+[node name="WinDialog" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="WinBox" type="NinePatchRect" parent="WinDialog"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -315.0
+offset_top = -148.0
+offset_right = 315.0
+offset_bottom = 148.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_sr5b4")
+region_rect = Rect2(0, 0, 100, 100)
+patch_margin_left = 11
+patch_margin_top = 11
+patch_margin_right = 11
+patch_margin_bottom = 11
+
+[node name="Label" type="Label" parent="WinDialog/WinBox"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -234.0
+offset_top = -87.5
+offset_right = 234.0
+offset_bottom = 87.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "You won!
+Thank you for playing!"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[connection signal="gui_input" from="MoveForward" to="." method="OnMoveForwardGuiInput"]
+[connection signal="mouse_entered" from="MoveForward" to="." method="OnMoveForwardMouseEntered"]
+[connection signal="mouse_exited" from="MoveForward" to="." method="OnMoveForwardMouseExited"]
+[connection signal="gui_input" from="TurnLeft" to="." method="OnTurnLeftGuiInput"]
+[connection signal="mouse_entered" from="TurnLeft" to="." method="OnTurnLeftMouseEntered"]
+[connection signal="mouse_exited" from="TurnLeft" to="." method="OnTurnLeftMouseExited"]
+[connection signal="gui_input" from="TurnRight" to="." method="OnTurnRightGuiInput"]
+[connection signal="mouse_entered" from="TurnRight" to="." method="OnTurnRightMouseEntered"]
+[connection signal="mouse_exited" from="TurnRight" to="." method="OnTurnRightMouseExited"]
+[connection signal="gui_input" from="GoBack" to="." method="OnGoBackGuiInput"]
+[connection signal="mouse_entered" from="GoBack" to="." method="OnGoBackMouseEntered"]
+[connection signal="mouse_exited" from="GoBack" to="." method="OnGoBackMouseExited"]
+[connection signal="pressed" from="Tutorial/TutorialBox/Confirm" to="." method="OnConfirmPressed"]

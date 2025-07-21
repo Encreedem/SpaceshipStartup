@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://cdmeoq3c7s1ew"]
+
+[ext_resource type="Script" uid="uid://b4pvonpw4qe24" path="res://Scenes/Interactables/Inspectable.cs" id="1_ex8ws"]
+[ext_resource type="PackedScene" uid="uid://yluwo8g0gjx3" path="res://Scenes/Interactables/Interactable3D.tscn" id="1_ucfjn"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ex8ws"]
+size = Vector3(3.31738, 1.82227, 0.172852)
+
+[node name="Inspectable" type="Node3D"]
+script = ExtResource("1_ex8ws")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(5, 0, -5.68434e-14, 0, 5, 0, 5.68434e-14, 0, 5, 6.53168e-07, 0, 7.47139)
+
+[node name="ZoomInteract" parent="." instance=ExtResource("1_ucfjn")]
+transform = Transform3D(-5, 0, -4.37114e-07, 0, 5, 0, 4.37114e-07, 0, -5, 0, 0, 2)
+Interaction = 1
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ZoomInteract"]
+shape = SubResource("BoxShape3D_ex8ws")
+debug_color = Color(0, 0.6, 0.701961, 0.72549)
+
+[connection signal="Clicked" from="ZoomInteract" to="." method="OnZoomInteractClicked"]

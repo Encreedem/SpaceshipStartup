@@ -1,0 +1,48 @@
+[gd_scene load_steps=4 format=3 uid="uid://x71w72qpnoo8"]
+
+[ext_resource type="Texture2D" uid="uid://dkwpt8oqgbwa2" path="res://Assets/UI/Kenney/Game Icons/2x/gear.png" id="1_omqfp"]
+[ext_resource type="Script" uid="uid://b5y2dyswrmha6" path="res://Scenes/UI/HUD.cs" id="1_qc5w2"]
+[ext_resource type="AudioStream" uid="uid://ljapayb28jf2" path="res://Assets/SFX/Pixabay/light-flick-on-100133.mp3" id="3_xaom8"]
+
+[node name="HUD" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_qc5w2")
+
+[node name="Settings" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -80.0
+offset_top = 9.0
+offset_right = -10.0
+offset_bottom = 80.0
+grow_horizontal = 0
+
+[node name="SettingsGear" type="TextureRect" parent="Settings"]
+modulate = Color(0.67069, 0.67069, 0.67069, 1)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -52.5
+offset_top = -52.5
+offset_right = 47.5
+offset_bottom = 47.5
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("1_omqfp")
+
+[node name="InteractSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_xaom8")
+
+[connection signal="gui_input" from="Settings" to="." method="OnSettingsGuiInput"]

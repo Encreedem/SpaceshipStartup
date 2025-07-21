@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://d3rjnsrthmbtb"]
+
+[ext_resource type="PackedScene" uid="uid://b6140vk3af1ty" path="res://Scenes/Interactables/PipePuzzle/PipeTile.tscn" id="1_56o76"]
+[ext_resource type="Texture2D" uid="uid://dsufxduoymc0e" path="res://Assets/2D/Kenney/Puzzle Assets 2/Pipes/Grey/pipeGrey_03.png" id="2_ijpbq"]
+
+[node name="PipeTileStraight" instance=ExtResource("1_56o76")]
+BaseConnections = 5
+
+[node name="PipeSprite" parent="PipePivot" index="0"]
+transform = Transform3D(0.585, 0, 0, 0, 0.585, 0, 0, 0, 0.585, 0, 0, 0.01)
+texture = ExtResource("2_ijpbq")

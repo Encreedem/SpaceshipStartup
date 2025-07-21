@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bgg3wk0dxb50e"
+path="res://.godot/imported/033_Denied_03.wav-b62ea1d572cde7c235536bf95833175e.sample"
+
+[deps]
+
+source_file="res://Assets/SFX/Leohpaz/Retro RPG 100 UI Sound Effects/033_Denied_03.wav"
+dest_files=["res://.godot/imported/033_Denied_03.wav-b62ea1d572cde7c235536bf95833175e.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

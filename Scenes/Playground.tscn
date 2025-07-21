@@ -1,0 +1,101 @@
+[gd_scene load_steps=19 format=3 uid="uid://tvb15ghs428s"]
+
+[ext_resource type="ArrayMesh" uid="uid://c8rxjob2rwdc0" path="res://Assets/3D/ThisIsBranden/Spaceship_Modules/Hall_Door_End.res" id="1_yhss4"]
+[ext_resource type="ArrayMesh" uid="uid://bdiw7aql5222l" path="res://Assets/3D/ThisIsBranden/Spaceship_Modules/Hall_Door_SmallOne.res" id="2_eodav"]
+[ext_resource type="ArrayMesh" uid="uid://cp46uf3ejbvlr" path="res://Assets/3D/ThisIsBranden/Spaceship_Modules/Hall_Door_SmallTwo.res" id="3_jefqp"]
+[ext_resource type="ArrayMesh" uid="uid://5oxtvsecnxlr" path="res://Assets/3D/ThisIsBranden/Spaceship_Modules/Hall_End.res" id="4_ueths"]
+[ext_resource type="ArrayMesh" uid="uid://buxom7qnte8uu" path="res://Assets/3D/ThisIsBranden/Spaceship_Modules/Door_Small_Bottom.res" id="5_v4683"]
+[ext_resource type="ArrayMesh" uid="uid://35d7yq23uvqv" path="res://Assets/3D/ThisIsBranden/Spaceship_Modules/Door_Small_Top.res" id="6_cupm3"]
+[ext_resource type="ArrayMesh" uid="uid://n25s78es4ya7" path="res://Assets/3D/ThisIsBranden/Spaceship_Modules/Door_Window.res" id="7_4jkay"]
+[ext_resource type="ArrayMesh" uid="uid://b5h8v3pgedqdx" path="res://Assets/3D/ThisIsBranden/Spaceship_Modules/Hall_Junction_T.res" id="8_ni7ox"]
+[ext_resource type="ArrayMesh" uid="uid://ckcms7yrtc3bq" path="res://Assets/3D/ThisIsBranden/Spaceship_Modules/Hall_Junction_X.res" id="9_1ljar"]
+[ext_resource type="ArrayMesh" uid="uid://0a0favliyswo" path="res://Assets/3D/ThisIsBranden/Spaceship_Modules/Hall_Light.res" id="10_1qiua"]
+[ext_resource type="ArrayMesh" uid="uid://jb8yggrvhbj2" path="res://Assets/3D/ThisIsBranden/Spaceship_Modules/Hall_NoLight.res" id="11_7f04o"]
+[ext_resource type="ArrayMesh" uid="uid://m0xr2eb0vu4n" path="res://Assets/3D/ThisIsBranden/Spaceship_Modules/Hall_NoLight_90Turn.res" id="12_nrajl"]
+[ext_resource type="ArrayMesh" uid="uid://pepwagratbxu" path="res://Assets/3D/ThisIsBranden/Spaceship_Modules/Hall_Light_90Turn.res" id="13_jv76g"]
+[ext_resource type="ArrayMesh" uid="uid://rrvtsymvnixd" path="res://Assets/3D/ThisIsBranden/Spaceship_Modules/Hall_Light_Window.res" id="14_5nqwm"]
+[ext_resource type="ArrayMesh" uid="uid://dbb2k15hs0pxl" path="res://Assets/3D/ThisIsBranden/Spaceship_Modules/Prop_DoorControl.res" id="15_v4683"]
+[ext_resource type="ArrayMesh" uid="uid://bpfjvy73tf7kf" path="res://Assets/3D/ThisIsBranden/Spaceship_Modules/Room_Long_L.res" id="16_cupm3"]
+[ext_resource type="ArrayMesh" uid="uid://558trg8vwlq3" path="res://Assets/3D/ThisIsBranden/Spaceship_Modules/Room_Long_R.res" id="17_4jkay"]
+[ext_resource type="ArrayMesh" uid="uid://c7au6sgmmrjxt" path="res://Assets/3D/ThisIsBranden/Spaceship_Modules/Room_Small.res" id="18_ni7ox"]
+
+[node name="Playground" type="Node3D"]
+
+[node name="HallDoorEnd" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -8)
+mesh = ExtResource("1_yhss4")
+
+[node name="HallDoorSmallOne" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, -18)
+mesh = ExtResource("2_eodav")
+
+[node name="HallDoorSmallTwo" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8)
+mesh = ExtResource("3_jefqp")
+
+[node name="HallEnd" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 8, 0, -18)
+mesh = ExtResource("4_ueths")
+
+[node name="DoorSmallBottom" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -13)
+mesh = ExtResource("5_v4683")
+
+[node name="DoorSmallTop" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -13)
+mesh = ExtResource("6_cupm3")
+
+[node name="DoorWindow" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -8, 0, -18)
+mesh = ExtResource("7_4jkay")
+
+[node name="HallJunctionT" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 16)
+mesh = ExtResource("8_ni7ox")
+
+[node name="HallJunctionX" type="MeshInstance3D" parent="."]
+mesh = ExtResource("9_1ljar")
+
+[node name="HallLight" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -8, 0, 0)
+mesh = ExtResource("10_1qiua")
+
+[node name="HallNoLight" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 8, 0, 0)
+mesh = ExtResource("11_7f04o")
+
+[node name="HallNoLight90Turn" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 16)
+mesh = ExtResource("12_nrajl")
+
+[node name="HallLight90Turn" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -8, 0, 16)
+mesh = ExtResource("13_jv76g")
+
+[node name="HallLightWindow" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -8, 0, 24)
+mesh = ExtResource("14_5nqwm")
+
+[node name="PropDoorControl" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -10.3863, 0, -14.1376)
+mesh = ExtResource("15_v4683")
+
+[node name="RoomLongL" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8, 0, 33.6)
+mesh = ExtResource("16_cupm3")
+
+[node name="HallDoorEnd2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -8, 0, 32)
+mesh = ExtResource("1_yhss4")
+
+[node name="HallDoorEnd3" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 8, 0, 24)
+mesh = ExtResource("1_yhss4")
+
+[node name="RoomLongR" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -8, 0, 41.6)
+mesh = ExtResource("17_4jkay")
+
+[node name="RoomSmall" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8, 0, -8)
+mesh = ExtResource("18_ni7ox")

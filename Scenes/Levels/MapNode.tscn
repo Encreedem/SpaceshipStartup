@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bfu74n7yequtq"]
+
+[ext_resource type="Script" uid="uid://dmkovikcw5pdt" path="res://Scenes/Levels/MapNode.cs" id="1_17y6y"]
+
+[node name="MapNode" type="Marker3D" groups=["MapNode"]]
+script = ExtResource("1_17y6y")
